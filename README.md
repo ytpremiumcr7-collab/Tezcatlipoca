@@ -1,32 +1,58 @@
-# React + TypeScript + Vite
+# Tezcatlipoca
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Sistema de Inteligencia Geoespacial y Topografia Avanzada
 
-Currently, two official plugins are available:
+[![CI/CD](https://github.com/TU_USUARIO/tezcatlipoca/actions/workflows/ci.yml/badge.svg)](https://github.com/TU_USUARIO/tezcatlipoca/actions/workflows/ci.yml)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripcion
 
-## React Compiler
+Tezcatlipoca es un sistema geoespacial determinista que integra visualizacion 3D, topografia computacional, astronomia y simulacion fisica en una sola interfaz.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack Tecnologico
 
-## Expanding the Oxlint configuration
+| Tecnologia | Uso |
+|-----------|-----|
+| React 19 | UI components |
+| TypeScript | Tipado estatico |
+| Vite 8 | Build tool |
+| Three.js | Renderizado 3D |
+| Cesium | Globo terraqueo |
+| D3 + Force Graph | Visualizacion de grafos |
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Modulos
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- **Geoespacial**: Globo Cesium 3D con terreno y satelites (ISS, Hubble, GPS, GOES)
+- **Topografia**: Puntos de levantamiento, triangulacion Delaunay, curvas de nivel, volumenes
+- **Astronomia**: Sistema Solar del Conocimiento - grafo 3D de papers cientificos con clustering Louvain
+- **Simulacion**: Raytracing de agujero negro Schwarzschild con parametros fisicos ajustables
+
+## Scripts
+
+```bash
+npm install    # Instalar dependencias
+npm run dev    # Desarrollo local
+npm run build  # Build de produccion
+npm run lint   # Linting con Oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Arquitectura
+
+```
+src/
+  components/     # 15 componentes React
+  engines/        # 4 motores: Camera, Layer, Selection, Time
+  hooks/          # useFps
+  utils/          # math, louvain (clustering)
+  shaders/        # gargantua.vert, gargantua.frag
+  data/           # Dataset de papers cientificos
+```
+
+## CI/CD
+
+Cada push a `main` o `master` dispara:
+1. Lint + Build
+2. Deploy automatico a GitHub Pages
+
+## Licencia
+
+MIT
