@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:desktop": "tsc -b && vite build --mode desktop",
-    "build:mobile": "tsc -b && vite build --mode mobile",
+    "build:desktop": "tsc -b && vite build --config vite.desktop.config.ts",
+    "build:mobile": "tsc -b && vite build --config vite.mobile.config.ts",
     "lint": "oxlint",
     "preview": "vite preview"
   },
