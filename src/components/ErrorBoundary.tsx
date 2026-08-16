@@ -1,13 +1,7 @@
 import { Component, type ReactNode } from 'react'
 
-interface Props {
-  children: ReactNode
-}
-
-interface State {
-  hasError: boolean
-  error: Error | null
-}
+interface Props { children: ReactNode }
+interface State { hasError: boolean; error: Error | null }
 
 export default class ErrorBoundary extends Component<Props, State> {
   state: State = { hasError: false, error: null }
@@ -16,51 +10,41 @@ export default class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error }
   }
 
-  componentDidCatch(error: Error, info: React.ErrorInfo) {
-    console.error('TEZCATLIPOCA ErrorBoundary:', error, info)
-  }
-
   render() {
     if (this.state.hasError) {
       return (
         <div style={{
-          width: '100vw',
-          height: '100vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#0a0a0f',
-          color: '#ff4444',
-          fontFamily: 'monospace',
-          padding: '2rem',
+          height: '100vh',
+          gap: 16,
+          padding: 24,
+          background: 'var(--bg-primary)',
+          color: 'var(--text-primary)',
         }}>
-          <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>TEZCATLIPOCA CRASH</h1>
+          <div style={{ fontSize: 48 }}>💥</div>
+          <h2 style={{ color: 'var(--text-danger)' }}>Error en Tezcatlipoca</h2>
           <pre style={{
-            background: '#111',
-            padding: '1rem',
-            borderRadius: '8px',
-            maxWidth: '800px',
+            background: 'var(--bg-secondary)',
+            padding: 16,
+            borderRadius: 8,
+            fontSize: 12,
+            maxWidth: 600,
             overflow: 'auto',
-            fontSize: '0.85rem',
-            color: '#ff8888',
+            color: 'var(--text-primary)',
+            border: '1px solid var(--border-color)',
           }}>
-            {this.state.error?.stack || this.state.error?.message || 'Unknown error'}
+            {this.state.error?.message}
+            {'\n'}
+            {this.state.error?.stack}
           </pre>
           <button
             onClick={() => window.location.reload()}
-            style={{
-              marginTop: '2rem',
-              padding: '0.75rem 2rem',
-              background: '#ff4444',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '1rem',
-            }}
+            className="tool-btn"
           >
-            Reload System
+            🔄 Recargar
           </button>
         </div>
       )

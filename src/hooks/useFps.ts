@@ -1,25 +1,32 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function useFps() {
   const [fps, setFps] = useState(0)
-  const frames = useRef(0)
-  const lastTime = useRef(performance.now())
+  const [frameTime, setFrameTime] = useState(0)
+  const framesRef = useRef(0)
+  const lastTimeRef = useRef(performance.now())
+  const rafRef = useRef(0)
 
   useEffect(() => {
-    let raf: number
-    const tick = () => {
-      frames.current++
+    const measure = () => {
       const now = performance.now()
-      if (now - lastTime.current >= 1000) {
-        setFps(frames.current)
-        frames.current = 0
-        lastTime.current = now
+      const elapsed = now - lastTimeRef.current
+      framesRef.current++
+
+      if (elapsed >= 1000) {
+        const currentFps = Math.round((framesRef.current * 1000) / elapsed)
+        setFps(currentFps)
+        setFrameTime(Math.round(elapsed / framesRef.current))
+        framesRef.current = 0
+        lastTimeRef.current = now
       }
-      raf = requestAnimationFrame(tick)
+
+      rafRef.current = requestAnimationFrame(measure)
     }
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+
+    rafRef.current = requestAnimationFrame(measure)
+    return () => cancelAnimationFrame(rafRef.current)
   }, [])
 
-  return fps
+  return { fps, frameTime }
 }

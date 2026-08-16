@@ -1,69 +1,82 @@
-import type { CameraState, Layer, GeoEntity } from './types.ts'
+// =============================================================================
+// SPATIAL RUNTIME — Núcleo orquestador de Tezcatlipoca v2
+// Basado en la spec: Sección 4, 23
+// =============================================================================
 
-export class CameraEngine {
-  state: CameraState = {
-    position: [0, 0, 1000],
-    target: [0, 0, 0],
-    up: [0, 1, 0],
-    fov: 60,
-    near: 0.1,
-    far: 100000,
+import { useTezcatlipoca } from '@/stores/tezcatlipocaStore'
+import type { CameraState, Layer, TimeState, ViewMode } from '@/types'
+
+// ---------------------------------------------------------------------------
+// Camera Engine
+// ---------------------------------------------------------------------------
+class CameraEngine {
+  private state: CameraState
+  private subscribers: Set<(s: CameraState) => void> = new Set()
+
+  constructor(initial: CameraState) {
+    this.state = initial
   }
 
-  listeners = new Set<(s: CameraState) => void>()
+  getState() { return this.state }
 
-  setPosition(p: [number, number, number]) {
-    this.state.position = p
+  setPosition(pos: [number, number, number]) {
+    this.state.position = pos
     this.notify()
   }
 
-  setTarget(t: [number, number, number]) {
-    this.state.target = t
+  setTarget(target: [number, number, number]) {
+    this.state.target = target
     this.notify()
   }
 
-  zoom(factor: number) {
-    const dx = this.state.position[0] - this.state.target[0]
-    const dy = this.state.position[1] - this.state.target[1]
-    const dz = this.state.position[2] - this.state.target[2]
-    this.state.position = [
-      this.state.target[0] + dx * factor,
-      this.state.target[1] + dy * factor,
-      this.state.target[2] + dz * factor,
-    ]
+  setZoom(zoom: number) {
+    this.state.zoom = Math.max(0.1, Math.min(100, zoom))
     this.notify()
   }
 
-  orbit(deltaAzimuth: number, deltaPolar: number) {
-    const dx = this.state.position[0] - this.state.target[0]
-    const dy = this.state.position[1] - this.state.target[1]
-    const dz = this.state.position[2] - this.state.target[2]
-    const r = Math.sqrt(dx * dx + dy * dy + dz * dz)
-    let azimuth = Math.atan2(dz, dx)
-    let polar = Math.acos(dy / r)
-    azimuth += deltaAzimuth
-    polar = Math.max(0.01, Math.min(Math.PI - 0.01, polar + deltaPolar))
-    this.state.position = [
-      this.state.target[0] + r * Math.sin(polar) * Math.cos(azimuth),
-      this.state.target[1] + r * Math.cos(polar),
-      this.state.target[2] + r * Math.sin(polar) * Math.sin(azimuth),
-    ]
-    this.notify()
+  flyTo(position: [number, number, number], target: [number, number, number], duration: number = 2000) {
+    const start = { ...this.state }
+    const startTime = performance.now()
+
+    const animate = (now: number) => {
+      const t = Math.min(1, (now - startTime) / duration)
+      const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2 // cubic ease
+
+      this.state.position = [
+        start.position[0] + (position[0] - start.position[0]) * ease,
+        start.position[1] + (position[1] - start.position[1]) * ease,
+        start.position[2] + (position[2] - start.position[2]) * ease,
+      ]
+      this.state.target = [
+        start.target[0] + (target[0] - start.target[0]) * ease,
+        start.target[1] + (target[1] - start.target[1]) * ease,
+        start.target[2] + (target[2] - start.target[2]) * ease,
+      ]
+
+      this.notify()
+
+      if (t < 1) requestAnimationFrame(animate)
+    }
+
+    requestAnimationFrame(animate)
   }
 
   subscribe(fn: (s: CameraState) => void) {
-    this.listeners.add(fn)
-    return () => this.listeners.delete(fn)
+    this.subscribers.add(fn)
+    return () => this.subscribers.delete(fn)
   }
 
   private notify() {
-    this.listeners.forEach(fn => fn(this.state))
+    this.subscribers.forEach((fn) => fn(this.state))
   }
 }
 
-export class LayerEngine {
-  layers: Layer[] = []
-  listeners = new Set<(l: Layer[]) => void>()
+// ---------------------------------------------------------------------------
+// Layer Engine
+// ---------------------------------------------------------------------------
+class LayerEngine {
+  private layers: Layer[] = []
+  private subscribers: Set<(l: Layer[]) => void> = new Set()
 
   addLayer(layer: Layer) {
     this.layers.push(layer)
@@ -71,52 +84,51 @@ export class LayerEngine {
   }
 
   removeLayer(id: string) {
-    this.layers = this.layers.filter(l => l.id !== id)
+    this.layers = this.layers.filter((l) => l.id !== id)
     this.notify()
   }
 
-  toggleVisibility(id: string) {
-    const layer = this.layers.find(l => l.id === id)
-    if (layer) {
-      layer.visible = !layer.visible
-      this.notify()
-    }
+  toggleLayer(id: string) {
+    this.layers = this.layers.map((l) =>
+      l.id === id ? { ...l, visible: !l.visible } : l
+    )
+    this.notify()
   }
 
   setOpacity(id: string, opacity: number) {
-    const layer = this.layers.find(l => l.id === id)
-    if (layer) {
-      layer.opacity = opacity
-      this.notify()
-    }
-  }
-
-  getVisible(): Layer[] {
-    return this.layers.filter(l => l.visible)
-  }
-
-  subscribe(fn: (l: Layer[]) => void) {
-    this.listeners.add(fn)
-    return () => this.listeners.delete(fn)
-  }
-
-  private notify() {
-    this.listeners.forEach(fn => fn([...this.layers]))
-  }
-}
-
-export class SelectionEngine {
-  selected: Set<string> = new Set()
-  listeners = new Set<(ids: Set<string>) => void>()
-
-  select(id: string, multi = false) {
-    if (!multi) this.selected.clear()
-    this.selected.add(id)
+    this.layers = this.layers.map((l) =>
+      l.id === id ? { ...l, opacity: Math.max(0, Math.min(1, opacity)) } : l
+    )
     this.notify()
   }
 
-  deselect(id: string) {
-    this.selected.delete(id)
+  getLayers() { return this.layers }
+
+  subscribe(fn: (l: Layer[]) => void) {
+    this.subscribers.add(fn)
+    return () => this.subscribers.delete(fn)
+  }
+
+  private notify() {
+    this.subscribers.forEach((fn) => fn([...this.layers]))
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Selection Engine
+// ---------------------------------------------------------------------------
+class SelectionEngine {
+  private selected: Set<string> = new Set()
+  private hovered: string | null = null
+  private subscribers: Set<(s: Set<string>, h: string | null) => void> = new Set()
+
+  select(id: string, multi: boolean = false) {
+    if (multi) {
+      if (this.selected.has(id)) this.selected.delete(id)
+      else this.selected.add(id)
+    } else {
+      this.selected = new Set([id])
+    }
     this.notify()
   }
 
@@ -125,81 +137,147 @@ export class SelectionEngine {
     this.notify()
   }
 
-  isSelected(id: string): boolean {
-    return this.selected.has(id)
+  hover(id: string | null) {
+    this.hovered = id
+    this.notify()
   }
 
-  subscribe(fn: (ids: Set<string>) => void) {
-    this.listeners.add(fn)
-    return () => this.listeners.delete(fn)
+  getSelected() { return new Set(this.selected) }
+  getHovered() { return this.hovered }
+
+  subscribe(fn: (s: Set<string>, h: string | null) => void) {
+    this.subscribers.add(fn)
+    return () => this.subscribers.delete(fn)
   }
 
   private notify() {
-    this.listeners.forEach(fn => new Set(this.selected))
+    this.subscribers.forEach((fn) => fn(new Set(this.selected), this.hovered))
   }
 }
 
-export class TimeEngine {
-  time = 0
-  speed = 1
-  playing = false
-  listeners = new Set<(t: number) => void>()
-  raf = 0
-  last = 0
+// ---------------------------------------------------------------------------
+// Time Engine
+// ---------------------------------------------------------------------------
+class TimeEngine {
+  private state: TimeState
+  private rafId: number = 0
+  private lastFrame: number = 0
+  private subscribers: Set<(s: TimeState) => void> = new Set()
+
+  constructor(initial: TimeState) {
+    this.state = initial
+  }
+
+  getState() { return this.state }
+
+  setTime(t: number) {
+    this.state.current = t
+    this.notify()
+  }
+
+  setRate(rate: number) {
+    this.state.rate = rate
+    this.notify()
+  }
 
   play() {
-    if (this.playing) return
-    this.playing = true
-    this.last = performance.now()
+    this.state.isPlaying = true
+    this.lastFrame = performance.now()
     this.tick()
   }
 
   pause() {
-    this.playing = false
-    cancelAnimationFrame(this.raf)
+    this.state.isPlaying = false
+    cancelAnimationFrame(this.rafId)
   }
 
-  setTime(t: number) {
-    this.time = t
-    this.notify()
-  }
-
-  setSpeed(s: number) {
-    this.speed = s
+  toggle() {
+    this.state.isPlaying ? this.pause() : this.play()
   }
 
   private tick = () => {
-    if (!this.playing) return
+    if (!this.state.isPlaying) return
     const now = performance.now()
-    const dt = (now - this.last) / 1000
-    this.last = now
-    this.time += dt * this.speed
+    const dt = (now - this.lastFrame) * this.state.rate
+    this.state.current += dt
+    this.lastFrame = now
     this.notify()
-    this.raf = requestAnimationFrame(this.tick)
+    this.rafId = requestAnimationFrame(this.tick)
   }
 
-  subscribe(fn: (t: number) => void) {
-    this.listeners.add(fn)
-    return () => this.listeners.delete(fn)
+  subscribe(fn: (s: TimeState) => void) {
+    this.subscribers.add(fn)
+    return () => this.subscribers.delete(fn)
   }
 
   private notify() {
-    this.listeners.forEach(fn => fn(this.time))
-  }
-
-  destroy() {
-    this.pause()
-    this.listeners.clear()
+    this.subscribers.forEach((fn) => fn({ ...this.state }))
   }
 }
 
+// ---------------------------------------------------------------------------
+// Spatial Runtime — Orquestador
+// ---------------------------------------------------------------------------
 export class SpatialRuntime {
-  camera = new CameraEngine()
-  layers = new LayerEngine()
-  selection = new SelectionEngine()
-  time = new TimeEngine()
+  camera: CameraEngine
+  layers: LayerEngine
+  selection: SelectionEngine
+  time: TimeEngine
+
+  private viewMode: ViewMode = 'earth'
+  private quality: string = 'high'
+
+  constructor() {
+    const store = useTezcatlipoca.getState()
+
+    this.camera = new CameraEngine(store.camera)
+    this.layers = new LayerEngine()
+    this.selection = new SelectionEngine()
+    this.time = new TimeEngine(store.time)
+
+    // Sync with Zustand store
+    this.camera.subscribe((cam) => useTezcatlipoca.getState().setCamera(cam))
+    this.layers.subscribe((layers) => {
+      // Sync layers to store if needed
+    })
+    this.selection.subscribe((selected, hovered) => {
+      const ids = Array.from(selected)
+      useTezcatlipoca.getState().selectEntity(ids.length > 0 ? ids[ids.length - 1] : null)
+    })
+    this.time.subscribe((time) => useTezcatlipoca.getState().setTime(time.current))
+  }
+
+  setViewMode(mode: ViewMode) {
+    this.viewMode = mode
+    useTezcatlipoca.getState().setViewMode(mode)
+  }
+
+  setQuality(q: string) {
+    this.quality = q
+    useTezcatlipoca.getState().setQuality(q as any)
+  }
+
+  flyTo(position: [number, number, number], target: [number, number, number], duration?: number) {
+    this.camera.flyTo(position, target, duration)
+  }
 
   destroy() {
-    this.time.destroy()
+    this.time.pause()
+  }
+}
+
+let runtimeInstance: SpatialRuntime | null = null
+
+export function getSpatialRuntime(): SpatialRuntime {
+  if (!runtimeInstance) {
+    runtimeInstance = new SpatialRuntime()
+  }
+  return runtimeInstance
+}
+
+export function destroySpatialRuntime() {
+  if (runtimeInstance) {
+    runtimeInstance.destroy()
+    runtimeInstance = null
   }
 }

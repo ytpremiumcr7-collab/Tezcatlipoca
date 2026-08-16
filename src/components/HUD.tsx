@@ -1,55 +1,59 @@
-import type { TelemetryData, ViewMode, QualityProfile } from '../engines/types.ts'
+import { useTezcatlipoca } from '@/stores/tezcatlipocaStore'
+import { useFps } from '@/hooks/useFps'
+import { useEffect, useState } from 'react'
 
-interface Props {
-  telemetry: TelemetryData
-  view: ViewMode
-  quality: QualityProfile
-}
+export default function HUD() {
+  const { telemetry, viewMode, quality, time } = useTezcatlipoca()
+  const { fps, frameTime } = useFps()
+  const [clock, setClock] = useState(new Date())
 
-export default function HUD({ telemetry, view, quality }: Props) {
+  useEffect(() => {
+    const interval = setInterval(() => setClock(new Date()), 1000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const hudItems = [
+    { label: 'FPS', value: fps, unit: '', warn: fps < 30 },
+    { label: 'Frame', value: frameTime, unit: 'ms', warn: frameTime > 33 },
+    { label: 'VIEW', value: viewMode.toUpperCase(), unit: '' },
+    { label: 'QUALITY', value: quality.toUpperCase(), unit: '' },
+    { label: 'ENTITIES', value: telemetry.entitiesRendered, unit: `/${telemetry.entitiesTotal}` },
+    { label: 'CHUNKS', value: telemetry.chunksLoaded, unit: `/${telemetry.chunksTotal}` },
+    { label: 'MEMORY', value: telemetry.memoryMB.toFixed(0), unit: 'MB' },
+    { label: 'GPU', value: telemetry.gpuTier.toUpperCase(), unit: '' },
+    { label: 'RENDERER', value: telemetry.rendererState, unit: '' },
+    { label: 'DATA', value: telemetry.dataState, unit: '' },
+    { label: 'STREAM', value: `${(telemetry.streamPressure * 100).toFixed(0)}%`, unit: '' },
+    { label: 'TIME', value: clock.toISOString().slice(11, 19), unit: 'UTC' },
+    { label: 'SIM', value: new Date(time.current).toISOString().slice(11, 19), unit: time.isPlaying ? '▶' : '⏸' },
+  ]
+
   return (
     <div style={{
       position: 'fixed',
-      bottom: '12px',
-      left: '12px',
-      right: '12px',
+      top: 56, right: 12,
+      zIndex: 50,
       display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'flex-end',
-      pointerEvents: 'none',
-      zIndex: 1000,
-      fontFamily: 'monospace',
-      fontSize: '0.7rem',
+      flexDirection: 'column',
+      gap: 4,
     }}>
-      <div style={{
-        background: 'rgba(10,10,20,0.8)',
-        backdropFilter: 'blur(8px)',
-        padding: '8px 12px',
-        borderRadius: '8px',
-        border: '1px solid rgba(255,165,0,0.2)',
-        color: '#ffa500',
-      }}>
-        <div>FPS: {telemetry.fps.toFixed(1)}</div>
-        <div>VIEW: {view.toUpperCase()}</div>
-        <div>QUALITY: {quality.toUpperCase()}</div>
-        <div>NODES: {telemetry.nodes}</div>
-        <div>EDGES: {telemetry.edges}</div>
-        <div>ENTITIES: {telemetry.entities}</div>
-        {telemetry.triangles !== undefined && <div>TRIANGLES: {telemetry.triangles}</div>}
-      </div>
-      <div style={{
-        background: 'rgba(10,10,20,0.8)',
-        backdropFilter: 'blur(8px)',
-        padding: '8px 12px',
-        borderRadius: '8px',
-        border: '1px solid rgba(255,165,0,0.2)',
-        color: '#888',
-        textAlign: 'right',
-      }}>
-        <div>TEZCATLIPOCA v1.0.0</div>
-        <div>Deterministic Geospatial OS</div>
-        <div>No AI APIs · No Cloud Cost</div>
-      </div>
+      {hudItems.map((item) => (
+        <div key={item.label} style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 8,
+          padding: '4px 10px',
+          borderRadius: 6,
+          background: 'var(--hud-bg)',
+          border: `1px solid ${item.warn ? 'var(--text-warning)' : 'var(--hud-border)'}`,
+          backdropFilter: 'blur(8px)',
+        }}>
+          <span className="hud-label">{item.label}</span>
+          <span className="hud-value" style={{ color: item.warn ? 'var(--text-warning)' : undefined }}>
+            {item.value}{item.unit}
+          </span>
+        </div>
+      ))}
     </div>
   )
 }
