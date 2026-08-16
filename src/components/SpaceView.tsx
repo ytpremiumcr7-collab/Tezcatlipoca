@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { useTezcatlipoca } from '@/stores/tezcatlipocaStore'
 import { useSimClock, formatClockTime, formatClockDate } from '@/hooks/useSimClock'
 import * as satEngine from '@/services/satelliteEngine'
+import NASADataPanel from '@/components/NASADataPanel'
 
 /* ── TYPES ─────────────────────────────────────────────────────────────── */
 interface SatInfo {
@@ -45,17 +46,32 @@ async function fetchTLEs(group: string = 'stations'): Promise<SatelliteData[]> {
   }
 }
 
-/* ── SGP4 PROPAGATION ──────────────────────────────────────────────────── */
-function propagateSGP4(l1: string, l2: string, date: Date): { x: number; y: number; z: number } {
-  // Fallback síncrono usando la lógica anterior (posición aproximada)
-  // En producción, usar satEngine.propagateSGP4() async
-  const minutes = (date.getTime() - Date.now()) / 60000
-  const orbitRadius = 6871 + Math.sin(minutes * 0.01) * 50
-  const angle = minutes * 0.004
+/* ── SGP4 PROPAGATION — Usa satelliteEngine.ts (CelesTrak TLEs + SGP4 real) ─ */
+function latLonAltToXYZ(lat: number, lon: number, alt: number): { x: number; y: number; z: number } {
+  const latRad = lat * Math.PI / 180
+  const lonRad = lon * Math.PI / 180
+  const r = 6371 + alt
   return {
-    x: orbitRadius * Math.cos(angle),
-    y: orbitRadius * Math.sin(angle) * 0.3,
-    z: orbitRadius * Math.sin(angle),
+    x: r * Math.cos(latRad) * Math.cos(lonRad),
+    y: r * Math.sin(latRad),
+    z: r * Math.cos(latRad) * Math.sin(lonRad),
+  }
+}
+
+async function getSatPosition(l1: string, l2: string, date: Date): Promise<{ x: number; y: number; z: number } | null> {
+  try {
+    const tle: satEngine.TLE = {
+      name: '',
+      noradId: '',
+      line1: l1,
+      line2: l2,
+      epoch: new Date(),
+    }
+    const pos = await satEngine.propagateSGP4(tle, date)
+    if (!pos) return null
+    return latLonAltToXYZ(pos.lat, pos.lon, pos.alt)
+  } catch {
+    return null
   }
 }
 
@@ -237,7 +253,11 @@ export default function SpaceView() {
       const trailPoints: THREE.Vector3[] = []
       for (let i = 0; i < 60; i++) {
         const t = new Date(clock.getTime() - i * 60000)
-        const pos = propagateSGP4(sat.l1, sat.l2, t)
+        const pos = latLonAltToXYZ(
+          0, // placeholder - se actualiza en el loop
+          0,
+          400 // altitud aproximada LEO
+        )
         trailPoints.push(new THREE.Vector3(pos.x, pos.y, pos.z))
       }
       const trailGeo = new THREE.BufferGeometry().setFromPoints(trailPoints)
@@ -262,30 +282,34 @@ export default function SpaceView() {
 
       const simTime = new Date(clock.getTime())
 
-      // Update satellites
-      satMeshes.forEach((sat) => {
-        if (!activeGroups.has(sat.groupIndex)) {
-          sat.mesh.visible = false
-          sat.trail.visible = false
+      // Update satellites - SGP4 real desde satelliteEngine
+      satMeshes.forEach((satMesh) => {
+        if (!activeGroups.has(satMesh.groupIndex)) {
+          satMesh.mesh.visible = false
+          satMesh.trail.visible = false
           return
         }
-        sat.mesh.visible = true
-        sat.trail.visible = true
+        satMesh.mesh.visible = true
+        satMesh.trail.visible = true
 
-        const pos = propagateSGP4(sat.data.l1, sat.data.l2, simTime)
-        sat.mesh.position.set(pos.x, pos.y, pos.z)
+        // Propagación SGP4 real (async en cada frame - optimizar con cache si es lento)
+        getSatPosition(satMesh.data.l1, satMesh.data.l2, simTime).then(pos => {
+          if (pos && satMesh.mesh) {
+            satMesh.mesh.position.set(pos.x, pos.y, pos.z)
 
-        // Update trail
-        const positions = sat.trail.geometry.attributes.position.array as Float32Array
-        for (let i = 59; i > 0; i--) {
-          positions[i * 3] = positions[(i - 1) * 3]
-          positions[i * 3 + 1] = positions[(i - 1) * 3 + 1]
-          positions[i * 3 + 2] = positions[(i - 1) * 3 + 2]
-        }
-        positions[0] = pos.x
-        positions[1] = pos.y
-        positions[2] = pos.z
-        sat.trail.geometry.attributes.position.needsUpdate = true
+            // Update trail
+            const positions = satMesh.trail.geometry.attributes.position.array as Float32Array
+            for (let i = 59; i > 0; i--) {
+              positions[i * 3] = positions[(i - 1) * 3]
+              positions[i * 3 + 1] = positions[(i - 1) * 3 + 1]
+              positions[i * 3 + 2] = positions[(i - 1) * 3 + 2]
+            }
+            positions[0] = pos.x
+            positions[1] = pos.y
+            positions[2] = pos.z
+            satMesh.trail.geometry.attributes.position.needsUpdate = true
+          }
+        })
       })
 
       // Rotate earth
@@ -348,9 +372,10 @@ export default function SpaceView() {
   }, [])
 
   /* Fly to satellite */
-  const flyToSat = useCallback((sat: SatInfo) => {
+  const flyToSat = useCallback(async (sat: SatInfo) => {
     if (!cameraRef.current) return
-    const pos = propagateSGP4(sat.l1, sat.l2, new Date(clock.getTime()))
+    const pos = await getSatPosition(sat.l1, sat.l2, new Date(clock.getTime()))
+    if (!pos) return
     const target = new THREE.Vector3(pos.x, pos.y, pos.z)
     const offset = target.clone().normalize().multiplyScalar(2000)
     const endPos = target.clone().add(offset)
@@ -494,6 +519,17 @@ export default function SpaceView() {
               </button>
             </div>
           )}
+
+          {/* NASA Data Panel */}
+          <div style={{
+            position: 'absolute', top: 70, right: selectedSat ? 250 : 12,
+            background: 'var(--hud-bg)', border: '1px solid var(--hud-border)',
+            borderRadius: 10, padding: 10, backdropFilter: 'blur(12px)',
+            width: 260, maxHeight: 'calc(100% - 100px)', overflow: 'auto',
+            zIndex: 10,
+          }}>
+            <NASADataPanel />
+          </div>
 
           {/* Telemetry */}
           <div style={{
