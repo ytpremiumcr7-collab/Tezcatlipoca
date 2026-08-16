@@ -1,0 +1,5064 @@
+{
+  "nodes": [
+    {
+      "id": "p000",
+      "title": "On the Electrodynamics of Moving Bodies",
+      "authors": "Einstein",
+      "year": 1905,
+      "abstract": "This paper by Einstein (1905) presents fundamental contributions to Special Relativity. It has been cited 15000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p000",
+      "url": "https://doi.org/10.1000/p000",
+      "citations": 15000,
+      "community": 0
+    },
+    {
+      "id": "p001",
+      "title": "The Field Equations of Gravitation",
+      "authors": "Einstein",
+      "year": 1915,
+      "abstract": "This paper by Einstein (1915) presents fundamental contributions to General Relativity. It has been cited 12000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p001",
+      "url": "https://doi.org/10.1000/p001",
+      "citations": 12000,
+      "community": 0
+    },
+    {
+      "id": "p002",
+      "title": "On the Gravitational Field of a Mass Point",
+      "authors": "Schwarzschild",
+      "year": 1916,
+      "abstract": "This paper by Schwarzschild (1916) presents fundamental contributions to Black Holes. It has been cited 8000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p002",
+      "url": "https://doi.org/10.1000/p002",
+      "citations": 8000,
+      "community": 0
+    },
+    {
+      "id": "p003",
+      "title": "A Relation Between Distance and Radial Velocity",
+      "authors": "Hubble",
+      "year": 1929,
+      "abstract": "This paper by Hubble (1929) presents fundamental contributions to Cosmology. It has been cited 9000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p003",
+      "url": "https://doi.org/10.1000/p003",
+      "citations": 9000,
+      "community": 0
+    },
+    {
+      "id": "p004",
+      "title": "On the Curvature of Space",
+      "authors": "Friedmann",
+      "year": 1922,
+      "abstract": "This paper by Friedmann (1922) presents fundamental contributions to Cosmology. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p004",
+      "url": "https://doi.org/10.1000/p004",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p005",
+      "title": "A Homogeneous Universe of Constant Mass",
+      "authors": "Lema\u00eetre",
+      "year": 1927,
+      "abstract": "This paper by Lema\u00eetre (1927) presents fundamental contributions to Big Bang. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p005",
+      "url": "https://doi.org/10.1000/p005",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p006",
+      "title": "Gravitational Collapse and Space-Time Singularities",
+      "authors": "Penrose",
+      "year": 1965,
+      "abstract": "This paper by Penrose (1965) presents fundamental contributions to Black Holes. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p006",
+      "url": "https://doi.org/10.1000/p006",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p007",
+      "title": "Particle Creation by Black Holes",
+      "authors": "Hawking",
+      "year": 1975,
+      "abstract": "This paper by Hawking (1975) presents fundamental contributions to Black Hole Thermodynamics. It has been cited 9500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p007",
+      "url": "https://doi.org/10.1000/p007",
+      "citations": 9500,
+      "community": 0
+    },
+    {
+      "id": "p008",
+      "title": "Black Hole Explosions",
+      "authors": "Hawking",
+      "year": 1974,
+      "abstract": "This paper by Hawking (1974) presents fundamental contributions to Quantum Gravity. It has been cited 8800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p008",
+      "url": "https://doi.org/10.1000/p008",
+      "citations": 8800,
+      "community": 0
+    },
+    {
+      "id": "p009",
+      "title": "Black Holes and Entropy",
+      "authors": "Bekenstein",
+      "year": 1973,
+      "abstract": "This paper by Bekenstein (1973) presents fundamental contributions to Thermodynamics. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p009",
+      "url": "https://doi.org/10.1000/p009",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p010",
+      "title": "Disk-Accretion onto a Black Hole",
+      "authors": "Thorne",
+      "year": 1974,
+      "abstract": "This paper by Thorne (1974) presents fundamental contributions to Accretion Physics. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p010",
+      "url": "https://doi.org/10.1000/p010",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p011",
+      "title": "Astrophysics of Black Holes",
+      "authors": "Novikov",
+      "year": 1973,
+      "abstract": "This paper by Novikov (1973) presents fundamental contributions to Black Hole Physics. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p011",
+      "url": "https://doi.org/10.1000/p011",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p012",
+      "title": "Galactic Nuclei as Collapsed Old Quasars",
+      "authors": "Lynden-Bell",
+      "year": 1969,
+      "abstract": "This paper by Lynden-Bell (1969) presents fundamental contributions to Active Galaxies. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p012",
+      "url": "https://doi.org/10.1000/p012",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p013",
+      "title": "Accretion of Interstellar Matter by Massive Objects",
+      "authors": "Salpeter",
+      "year": 1964,
+      "abstract": "This paper by Salpeter (1964) presents fundamental contributions to Accretion. It has been cited 5500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p013",
+      "url": "https://doi.org/10.1000/p013",
+      "citations": 5500,
+      "community": 0
+    },
+    {
+      "id": "p014",
+      "title": "The Fate of a Star and the Evolution of Gravitational Energy",
+      "authors": "Zel'dovich",
+      "year": 1964,
+      "abstract": "This paper by Zel'dovich (1964) presents fundamental contributions to Stellar Collapse. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p014",
+      "url": "https://doi.org/10.1000/p014",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p015",
+      "title": "On Continued Gravitational Contraction",
+      "authors": "Oppenheimer",
+      "year": 1939,
+      "abstract": "This paper by Oppenheimer (1939) presents fundamental contributions to Neutron Stars. It has been cited 6200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p015",
+      "url": "https://doi.org/10.1000/p015",
+      "citations": 6200,
+      "community": 0
+    },
+    {
+      "id": "p016",
+      "title": "Static Solutions of Einstein's Field Equations",
+      "authors": "Tolman",
+      "year": 1939,
+      "abstract": "This paper by Tolman (1939) presents fundamental contributions to Relativistic Stars. It has been cited 3500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p016",
+      "url": "https://doi.org/10.1000/p016",
+      "citations": 3500,
+      "community": 0
+    },
+    {
+      "id": "p017",
+      "title": "On Massive Neutron Cores",
+      "authors": "Volkoff",
+      "year": 1939,
+      "abstract": "This paper by Volkoff (1939) presents fundamental contributions to Neutron Stars. It has been cited 4200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p017",
+      "url": "https://doi.org/10.1000/p017",
+      "citations": 4200,
+      "community": 0
+    },
+    {
+      "id": "p018",
+      "title": "The Maximum Mass of Ideal White Dwarfs",
+      "authors": "Chandrasekhar",
+      "year": 1931,
+      "abstract": "This paper by Chandrasekhar (1931) presents fundamental contributions to Stellar Structure. It has been cited 7800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p018",
+      "url": "https://doi.org/10.1000/p018",
+      "citations": 7800,
+      "community": 0
+    },
+    {
+      "id": "p019",
+      "title": "On the Theory of Stars",
+      "authors": "Landau",
+      "year": 1932,
+      "abstract": "This paper by Landau (1932) presents fundamental contributions to Stellar Physics. It has been cited 3600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p019",
+      "url": "https://doi.org/10.1000/p019",
+      "citations": 3600,
+      "community": 0
+    },
+    {
+      "id": "p020",
+      "title": "The Resolution of Messier 32 and NGC 205",
+      "authors": "Baade",
+      "year": 1944,
+      "abstract": "This paper by Baade (1944) presents fundamental contributions to Galaxy Structure. It has been cited 3400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p020",
+      "url": "https://doi.org/10.1000/p020",
+      "citations": 3400,
+      "community": 0
+    },
+    {
+      "id": "p021",
+      "title": "The Crab Nebula",
+      "authors": "Minkowski",
+      "year": 1942,
+      "abstract": "This paper by Minkowski (1942) presents fundamental contributions to Supernovae. It has been cited 3100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p021",
+      "url": "https://doi.org/10.1000/p021",
+      "citations": 3100,
+      "community": 0
+    },
+    {
+      "id": "p022",
+      "title": "On the Nature of the Crab Nebula's Optical Emission",
+      "authors": "Shklovsky",
+      "year": 1953,
+      "abstract": "This paper by Shklovsky (1953) presents fundamental contributions to Astrophysics. It has been cited 2800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p022",
+      "url": "https://doi.org/10.1000/p022",
+      "citations": 2800,
+      "community": 0
+    },
+    {
+      "id": "p023",
+      "title": "Synthesis of the Elements in Stars",
+      "authors": "Burbidge",
+      "year": 1957,
+      "abstract": "This paper by Burbidge (1957) presents fundamental contributions to Nucleosynthesis. It has been cited 6700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p023",
+      "url": "https://doi.org/10.1000/p023",
+      "citations": 6700,
+      "community": 0
+    },
+    {
+      "id": "p024",
+      "title": "The Synthesis of the Elements from Hydrogen",
+      "authors": "Hoyle",
+      "year": 1946,
+      "abstract": "This paper by Hoyle (1946) presents fundamental contributions to Nucleosynthesis. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p024",
+      "url": "https://doi.org/10.1000/p024",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p025",
+      "title": "Nuclear Astrophysics",
+      "authors": "Fowler",
+      "year": 1967,
+      "abstract": "This paper by Fowler (1967) presents fundamental contributions to Nuclear Physics. It has been cited 4900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p025",
+      "url": "https://doi.org/10.1000/p025",
+      "citations": 4900,
+      "community": 0
+    },
+    {
+      "id": "p026",
+      "title": "A Model of Leptons",
+      "authors": "Weinberg",
+      "year": 1967,
+      "abstract": "This paper by Weinberg (1967) presents fundamental contributions to Electroweak Theory. It has been cited 11000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p026",
+      "url": "https://doi.org/10.1000/p026",
+      "citations": 11000,
+      "community": 0
+    },
+    {
+      "id": "p027",
+      "title": "Partial-Symmetries of Weak Interactions",
+      "authors": "Glashow",
+      "year": 1961,
+      "abstract": "This paper by Glashow (1961) presents fundamental contributions to Gauge Theory. It has been cited 7500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p027",
+      "url": "https://doi.org/10.1000/p027",
+      "citations": 7500,
+      "community": 0
+    },
+    {
+      "id": "p028",
+      "title": "Weak and Electromagnetic Interactions",
+      "authors": "Salam",
+      "year": 1968,
+      "abstract": "This paper by Salam (1968) presents fundamental contributions to Unified Theory. It has been cited 8200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p028",
+      "url": "https://doi.org/10.1000/p028",
+      "citations": 8200,
+      "community": 0
+    },
+    {
+      "id": "p029",
+      "title": "Renormalization of Massless Yang-Mills Fields",
+      "authors": "t Hooft",
+      "year": 1971,
+      "abstract": "This paper by t Hooft (1971) presents fundamental contributions to Quantum Field Theory. It has been cited 6000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p029",
+      "url": "https://doi.org/10.1000/p029",
+      "citations": 6000,
+      "community": 0
+    },
+    {
+      "id": "p030",
+      "title": "Regularization and Renormalization of Gauge Fields",
+      "authors": "Veltman",
+      "year": 1972,
+      "abstract": "This paper by Veltman (1972) presents fundamental contributions to QFT. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p030",
+      "url": "https://doi.org/10.1000/p030",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p031",
+      "title": "A Schematic Model of Baryons and Mesons",
+      "authors": "Gell-Mann",
+      "year": 1964,
+      "abstract": "This paper by Gell-Mann (1964) presents fundamental contributions to Quark Model. It has been cited 8900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p031",
+      "url": "https://doi.org/10.1000/p031",
+      "citations": 8900,
+      "community": 0
+    },
+    {
+      "id": "p032",
+      "title": "An SU(3) Model for Strong Interaction Symmetry",
+      "authors": "Zweig",
+      "year": 1964,
+      "abstract": "This paper by Zweig (1964) presents fundamental contributions to Quarks. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p032",
+      "url": "https://doi.org/10.1000/p032",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p033",
+      "title": "Quasi-Particles and Gauge Invariance",
+      "authors": "Nambu",
+      "year": 1960,
+      "abstract": "This paper by Nambu (1960) presents fundamental contributions to Spontaneous Symmetry Breaking. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p033",
+      "url": "https://doi.org/10.1000/p033",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p034",
+      "title": "Field Theories with Superconductor Solutions",
+      "authors": "Goldstone",
+      "year": 1961,
+      "abstract": "This paper by Goldstone (1961) presents fundamental contributions to Symmetry Breaking. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p034",
+      "url": "https://doi.org/10.1000/p034",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p035",
+      "title": "Broken Symmetries and the Masses of Gauge Bosons",
+      "authors": "Higgs",
+      "year": 1964,
+      "abstract": "This paper by Higgs (1964) presents fundamental contributions to Higgs Mechanism. It has been cited 13000 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p035",
+      "url": "https://doi.org/10.1000/p035",
+      "citations": 13000,
+      "community": 0
+    },
+    {
+      "id": "p036",
+      "title": "Broken Symmetry and the Mass of Gauge Vector Mesons",
+      "authors": "Englert",
+      "year": 1964,
+      "abstract": "This paper by Englert (1964) presents fundamental contributions to Higgs Mechanism. It has been cited 5600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p036",
+      "url": "https://doi.org/10.1000/p036",
+      "citations": 5600,
+      "community": 0
+    },
+    {
+      "id": "p037",
+      "title": "Symmetry Breaking in Non-Abelian Gauge Theories",
+      "authors": "Kibble",
+      "year": 1967,
+      "abstract": "This paper by Kibble (1967) presents fundamental contributions to Gauge Theory. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p037",
+      "url": "https://doi.org/10.1000/p037",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p038",
+      "title": "The Problem of Mass",
+      "authors": "Weinberg",
+      "year": 1967,
+      "abstract": "This paper by Weinberg (1967) presents fundamental contributions to Particle Physics. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p038",
+      "url": "https://doi.org/10.1000/p038",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p039",
+      "title": "Experimental Observation of the Intermediate Vector Bosons",
+      "authors": "Rubbia",
+      "year": 1983,
+      "abstract": "This paper by Rubbia (1983) presents fundamental contributions to Weak Force. It has been cited 7100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p039",
+      "url": "https://doi.org/10.1000/p039",
+      "citations": 7100,
+      "community": 0
+    },
+    {
+      "id": "p040",
+      "title": "Stochastic Cooling and the Accumulation of Antiprotons",
+      "authors": "van der Meer",
+      "year": 1983,
+      "abstract": "This paper by van der Meer (1983) presents fundamental contributions to Accelerator Physics. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p040",
+      "url": "https://doi.org/10.1000/p040",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p041",
+      "title": "Observation of the Bottom Quark",
+      "authors": "Lederman",
+      "year": 1988,
+      "abstract": "This paper by Lederman (1988) presents fundamental contributions to Quark Physics. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p041",
+      "url": "https://doi.org/10.1000/p041",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p042",
+      "title": "Evidence for Anomalous Lepton Production",
+      "authors": "Perl",
+      "year": 1975,
+      "abstract": "This paper by Perl (1975) presents fundamental contributions to Tau Lepton. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p042",
+      "url": "https://doi.org/10.1000/p042",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p043",
+      "title": "Discovery of a New Particle at SPEAR",
+      "authors": "Richter",
+      "year": 1974,
+      "abstract": "This paper by Richter (1974) presents fundamental contributions to Charm Quark. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p043",
+      "url": "https://doi.org/10.1000/p043",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p044",
+      "title": "Discovery of the J Particle",
+      "authors": "Ting",
+      "year": 1974,
+      "abstract": "This paper by Ting (1974) presents fundamental contributions to Charm Quark. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p044",
+      "url": "https://doi.org/10.1000/p044",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p045",
+      "title": "Evidence for the 2\u03c0 Decay of the K20 Meson",
+      "authors": "Cronin",
+      "year": 1964,
+      "abstract": "This paper by Cronin (1964) presents fundamental contributions to CP Violation. It has been cited 4900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p045",
+      "url": "https://doi.org/10.1000/p045",
+      "citations": 4900,
+      "community": 0
+    },
+    {
+      "id": "p046",
+      "title": "Evidence for the 2\u03c0 Decay of the K20 Meson",
+      "authors": "Fitch",
+      "year": 1964,
+      "abstract": "This paper by Fitch (1964) presents fundamental contributions to CP Violation. It has been cited 4600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p046",
+      "url": "https://doi.org/10.1000/p046",
+      "citations": 4600,
+      "community": 0
+    },
+    {
+      "id": "p047",
+      "title": "CP Violation in the Renormalizable Theory of Weak Interaction",
+      "authors": "Kobayashi",
+      "year": 1973,
+      "abstract": "This paper by Kobayashi (1973) presents fundamental contributions to CP Violation. It has been cited 5500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p047",
+      "url": "https://doi.org/10.1000/p047",
+      "citations": 5500,
+      "community": 0
+    },
+    {
+      "id": "p048",
+      "title": "CP Violation in the Renormalizable Theory of Weak Interaction",
+      "authors": "Maskawa",
+      "year": 1973,
+      "abstract": "This paper by Maskawa (1973) presents fundamental contributions to CP Violation. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p048",
+      "url": "https://doi.org/10.1000/p048",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p049",
+      "title": "A Measurement of Excess Antenna Temperature at 4080 Mc/s",
+      "authors": "Penzias",
+      "year": 1965,
+      "abstract": "This paper by Penzias (1965) presents fundamental contributions to CMB. It has been cited 8200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p049",
+      "url": "https://doi.org/10.1000/p049",
+      "citations": 8200,
+      "community": 0
+    },
+    {
+      "id": "p050",
+      "title": "A Measurement of Excess Antenna Temperature",
+      "authors": "Wilson",
+      "year": 1965,
+      "abstract": "This paper by Wilson (1965) presents fundamental contributions to CMB. It has been cited 7900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p050",
+      "url": "https://doi.org/10.1000/p050",
+      "citations": 7900,
+      "community": 0
+    },
+    {
+      "id": "p051",
+      "title": "Structure in the COBE Differential Microwave Radiometer",
+      "authors": "Smoot",
+      "year": 1992,
+      "abstract": "This paper by Smoot (1992) presents fundamental contributions to CMB Anisotropy. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p051",
+      "url": "https://doi.org/10.1000/p051",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p052",
+      "title": "A Preliminary Measurement of the Cosmic Microwave Background Spectrum",
+      "authors": "Mather",
+      "year": 1990,
+      "abstract": "This paper by Mather (1990) presents fundamental contributions to CMB. It has been cited 5900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p052",
+      "url": "https://doi.org/10.1000/p052",
+      "citations": 5900,
+      "community": 0
+    },
+    {
+      "id": "p053",
+      "title": "Primordial Helium Abundance and the Primeval Fireball",
+      "authors": "Peebles",
+      "year": 1966,
+      "abstract": "This paper by Peebles (1966) presents fundamental contributions to Cosmology. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p053",
+      "url": "https://doi.org/10.1000/p053",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p054",
+      "title": "Cosmic Black-Body Radiation",
+      "authors": "Dicke",
+      "year": 1965,
+      "abstract": "This paper by Dicke (1965) presents fundamental contributions to CMB. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p054",
+      "url": "https://doi.org/10.1000/p054",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p055",
+      "title": "The Origin of Chemical Elements",
+      "authors": "Gamow",
+      "year": 1948,
+      "abstract": "This paper by Gamow (1948) presents fundamental contributions to Big Bang Nucleosynthesis. It has been cited 6100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p055",
+      "url": "https://doi.org/10.1000/p055",
+      "citations": 6100,
+      "community": 0
+    },
+    {
+      "id": "p056",
+      "title": "The Origin of Chemical Elements",
+      "authors": "Alpher",
+      "year": 1948,
+      "abstract": "This paper by Alpher (1948) presents fundamental contributions to Nucleosynthesis. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p056",
+      "url": "https://doi.org/10.1000/p056",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p057",
+      "title": "On the Relative Abundance of the Elements",
+      "authors": "Herman",
+      "year": 1948,
+      "abstract": "This paper by Herman (1948) presents fundamental contributions to Cosmology. It has been cited 3200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p057",
+      "url": "https://doi.org/10.1000/p057",
+      "citations": 3200,
+      "community": 0
+    },
+    {
+      "id": "p058",
+      "title": "The Steady-State Theory of the Expanding Universe",
+      "authors": "Bondi",
+      "year": 1948,
+      "abstract": "This paper by Bondi (1948) presents fundamental contributions to Steady State. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p058",
+      "url": "https://doi.org/10.1000/p058",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p059",
+      "title": "The Steady-State Theory of the Expanding Universe",
+      "authors": "Gold",
+      "year": 1948,
+      "abstract": "This paper by Gold (1948) presents fundamental contributions to Steady State. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p059",
+      "url": "https://doi.org/10.1000/p059",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p060",
+      "title": "A New Model for the Expanding Universe",
+      "authors": "Hoyle",
+      "year": 1948,
+      "abstract": "This paper by Hoyle (1948) presents fundamental contributions to Steady State. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p060",
+      "url": "https://doi.org/10.1000/p060",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p061",
+      "title": "The Ability of the 200-Inch Telescope to Discriminate Between Selected World Models",
+      "authors": "Sandage",
+      "year": 1961,
+      "abstract": "This paper by Sandage (1961) presents fundamental contributions to Cosmology. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p061",
+      "url": "https://doi.org/10.1000/p061",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p062",
+      "title": "The Hubble Constant",
+      "authors": "de Vaucouleurs",
+      "year": 1958,
+      "abstract": "This paper by de Vaucouleurs (1958) presents fundamental contributions to Distance Scale. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p062",
+      "url": "https://doi.org/10.1000/p062",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p063",
+      "title": "A New Method of Determining Distances to Galaxies",
+      "authors": "Tully",
+      "year": 1977,
+      "abstract": "This paper by Tully (1977) presents fundamental contributions to Distance Ladder. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p063",
+      "url": "https://doi.org/10.1000/p063",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p064",
+      "title": "New Method of Determining Distances to Galaxies",
+      "authors": "Fisher",
+      "year": 1977,
+      "abstract": "This paper by Fisher (1977) presents fundamental contributions to Distance Ladder. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p064",
+      "url": "https://doi.org/10.1000/p064",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p065",
+      "title": "Observational Evidence from Supernovae for an Accelerating Universe",
+      "authors": "Riess",
+      "year": 1998,
+      "abstract": "This paper by Riess (1998) presents fundamental contributions to Dark Energy. It has been cited 9200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p065",
+      "url": "https://doi.org/10.1000/p065",
+      "citations": 9200,
+      "community": 0
+    },
+    {
+      "id": "p066",
+      "title": "Measurements of Omega and Lambda from 42 High-Redshift Supernovae",
+      "authors": "Perlmutter",
+      "year": 1999,
+      "abstract": "This paper by Perlmutter (1999) presents fundamental contributions to Dark Energy. It has been cited 8800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p066",
+      "url": "https://doi.org/10.1000/p066",
+      "citations": 8800,
+      "community": 0
+    },
+    {
+      "id": "p067",
+      "title": "The High-Z Supernova Search",
+      "authors": "Schmidt",
+      "year": 1998,
+      "abstract": "This paper by Schmidt (1998) presents fundamental contributions to Dark Energy. It has been cited 7600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p067",
+      "url": "https://doi.org/10.1000/p067",
+      "citations": 7600,
+      "community": 0
+    },
+    {
+      "id": "p068",
+      "title": "A Distinctive Type of Supernova in Distant Galaxies",
+      "authors": "Kirshner",
+      "year": 1981,
+      "abstract": "This paper by Kirshner (1981) presents fundamental contributions to Supernovae. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p068",
+      "url": "https://doi.org/10.1000/p068",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p069",
+      "title": "Supernovae",
+      "authors": "Wheeler",
+      "year": 1968,
+      "abstract": "This paper by Wheeler (1968) presents fundamental contributions to Stellar Evolution. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p069",
+      "url": "https://doi.org/10.1000/p069",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p070",
+      "title": "The Hydrodynamic Behavior of Supernova Explosions",
+      "authors": "Colgate",
+      "year": 1966,
+      "abstract": "This paper by Colgate (1966) presents fundamental contributions to Supernovae. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p070",
+      "url": "https://doi.org/10.1000/p070",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p071",
+      "title": "The Hydrodynamic Behavior of Supernova Explosions",
+      "authors": "White",
+      "year": 1966,
+      "abstract": "This paper by White (1966) presents fundamental contributions to Supernovae. It has been cited 3500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p071",
+      "url": "https://doi.org/10.1000/p071",
+      "citations": 3500,
+      "community": 0
+    },
+    {
+      "id": "p072",
+      "title": "Energy Production in Stars",
+      "authors": "Bethe",
+      "year": 1939,
+      "abstract": "This paper by Bethe (1939) presents fundamental contributions to Stellar Energy. It has been cited 6700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p072",
+      "url": "https://doi.org/10.1000/p072",
+      "citations": 6700,
+      "community": 0
+    },
+    {
+      "id": "p073",
+      "title": "On the Possibility of a Chain Reaction in Stars",
+      "authors": "von Weizs\u00e4cker",
+      "year": 1938,
+      "abstract": "This paper by von Weizs\u00e4cker (1938) presents fundamental contributions to Nuclear Fusion. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p073",
+      "url": "https://doi.org/10.1000/p073",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p074",
+      "title": "On the Possibility of a Chain Reaction",
+      "authors": "CNO",
+      "year": 1938,
+      "abstract": "This paper by CNO (1938) presents fundamental contributions to Stellar Fusion. It has been cited 3700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p074",
+      "url": "https://doi.org/10.1000/p074",
+      "citations": 3700,
+      "community": 0
+    },
+    {
+      "id": "p075",
+      "title": "The Synthesis of Elements in Stars",
+      "authors": "Atkinson",
+      "year": 1931,
+      "abstract": "This paper by Atkinson (1931) presents fundamental contributions to Nucleosynthesis. It has been cited 3400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p075",
+      "url": "https://doi.org/10.1000/p075",
+      "citations": 3400,
+      "community": 0
+    },
+    {
+      "id": "p076",
+      "title": "The Question of Energy Production in Stars",
+      "authors": "Houtermans",
+      "year": 1929,
+      "abstract": "This paper by Houtermans (1929) presents fundamental contributions to Stellar Physics. It has been cited 2900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p076",
+      "url": "https://doi.org/10.1000/p076",
+      "citations": 2900,
+      "community": 0
+    },
+    {
+      "id": "p077",
+      "title": "The Internal Constitution of the Stars",
+      "authors": "Eddington",
+      "year": 1920,
+      "abstract": "This paper by Eddington (1920) presents fundamental contributions to Stellar Structure. It has been cited 5500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p077",
+      "url": "https://doi.org/10.1000/p077",
+      "citations": 5500,
+      "community": 0
+    },
+    {
+      "id": "p078",
+      "title": "Thermodynamics of the Stars",
+      "authors": "Milne",
+      "year": 1930,
+      "abstract": "This paper by Milne (1930) presents fundamental contributions to Stellar Physics. It has been cited 3100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p078",
+      "url": "https://doi.org/10.1000/p078",
+      "citations": 3100,
+      "community": 0
+    },
+    {
+      "id": "p079",
+      "title": "The Stability of a Spherical Nebula",
+      "authors": "Jeans",
+      "year": 1902,
+      "abstract": "This paper by Jeans (1902) presents fundamental contributions to Gravitational Instability. It has been cited 4200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p079",
+      "url": "https://doi.org/10.1000/p079",
+      "citations": 4200,
+      "community": 0
+    },
+    {
+      "id": "p080",
+      "title": "On Convection Currents in a Horizontal Layer of Fluid",
+      "authors": "Rayleigh",
+      "year": 1916,
+      "abstract": "This paper by Rayleigh (1916) presents fundamental contributions to Fluid Dynamics. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p080",
+      "url": "https://doi.org/10.1000/p080",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p081",
+      "title": "Eddy Motion in the Atmosphere",
+      "authors": "Taylor",
+      "year": 1915,
+      "abstract": "This paper by Taylor (1915) presents fundamental contributions to Turbulence. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p081",
+      "url": "https://doi.org/10.1000/p081",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p082",
+      "title": "The Local Structure of Turbulence in Incompressible Viscous Fluid",
+      "authors": "Kolmogorov",
+      "year": 1941,
+      "abstract": "This paper by Kolmogorov (1941) presents fundamental contributions to Turbulence. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p082",
+      "url": "https://doi.org/10.1000/p082",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p083",
+      "title": "Inertial Ranges in Two-Dimensional Turbulence",
+      "authors": "Kraichnan",
+      "year": 1967,
+      "abstract": "This paper by Kraichnan (1967) presents fundamental contributions to Fluid Dynamics. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p083",
+      "url": "https://doi.org/10.1000/p083",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p084",
+      "title": "The Theory of Homogeneous Turbulence",
+      "authors": "Batchelor",
+      "year": 1953,
+      "abstract": "This paper by Batchelor (1953) presents fundamental contributions to Fluid Mechanics. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p084",
+      "url": "https://doi.org/10.1000/p084",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p085",
+      "title": "The Structure of Turbulent Shear Flow",
+      "authors": "Townsend",
+      "year": 1956,
+      "abstract": "This paper by Townsend (1956) presents fundamental contributions to Fluid Mechanics. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p085",
+      "url": "https://doi.org/10.1000/p085",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p086",
+      "title": "On the Spectrum of Isotropic Temperature Fluctuations",
+      "authors": "Corrsin",
+      "year": 1951,
+      "abstract": "This paper by Corrsin (1951) presents fundamental contributions to Turbulence. It has been cited 3200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p086",
+      "url": "https://doi.org/10.1000/p086",
+      "citations": 3200,
+      "community": 0
+    },
+    {
+      "id": "p087",
+      "title": "On the Distribution of Energy in the Spectrum of Turbulent Flow",
+      "authors": "Obukhov",
+      "year": 1941,
+      "abstract": "This paper by Obukhov (1941) presents fundamental contributions to Turbulence. It has been cited 3600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p087",
+      "url": "https://doi.org/10.1000/p087",
+      "citations": 3600,
+      "community": 0
+    },
+    {
+      "id": "p088",
+      "title": "On the Theory of Statistical and Isotropic Turbulence",
+      "authors": "Heisenberg",
+      "year": 1948,
+      "abstract": "This paper by Heisenberg (1948) presents fundamental contributions to Turbulence. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p088",
+      "url": "https://doi.org/10.1000/p088",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p089",
+      "title": "Mechanische \u00c4hnlichkeit und Turbulenz",
+      "authors": "von K\u00e1rm\u00e1n",
+      "year": 1930,
+      "abstract": "This paper by von K\u00e1rm\u00e1n (1930) presents fundamental contributions to Fluid Dynamics. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p089",
+      "url": "https://doi.org/10.1000/p089",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p090",
+      "title": "Bericht \u00fcber Untersuchungen zur ausgebildeten Turbulenz",
+      "authors": "Prandtl",
+      "year": 1925,
+      "abstract": "This paper by Prandtl (1925) presents fundamental contributions to Boundary Layer. It has been cited 5300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p090",
+      "url": "https://doi.org/10.1000/p090",
+      "citations": 5300,
+      "community": 0
+    },
+    {
+      "id": "p091",
+      "title": "Grenzschichten in Fl\u00fcssigkeiten mit kleiner Reibung",
+      "authors": "Blasius",
+      "year": 1908,
+      "abstract": "This paper by Blasius (1908) presents fundamental contributions to Boundary Layer. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p091",
+      "url": "https://doi.org/10.1000/p091",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p092",
+      "title": "M\u00e9moire sur les lois du mouvement des fluides",
+      "authors": "Navier",
+      "year": 1823,
+      "abstract": "This paper by Navier (1823) presents fundamental contributions to Fluid Mechanics. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p092",
+      "url": "https://doi.org/10.1000/p092",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p093",
+      "title": "On the Theories of the Internal Friction of Fluids",
+      "authors": "Stokes",
+      "year": 1845,
+      "abstract": "This paper by Stokes (1845) presents fundamental contributions to Fluid Mechanics. It has been cited 4200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p093",
+      "url": "https://doi.org/10.1000/p093",
+      "citations": 4200,
+      "community": 0
+    },
+    {
+      "id": "p094",
+      "title": "Principes g\u00e9n\u00e9raux du mouvement des fluides",
+      "authors": "Euler",
+      "year": 1757,
+      "abstract": "This paper by Euler (1757) presents fundamental contributions to Fluid Dynamics. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p094",
+      "url": "https://doi.org/10.1000/p094",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p095",
+      "title": "Hydrodynamica",
+      "authors": "Bernoulli",
+      "year": 1738,
+      "abstract": "This paper by Bernoulli (1738) presents fundamental contributions to Fluid Mechanics. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p095",
+      "url": "https://doi.org/10.1000/p095",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p096",
+      "title": "Essai d'une nouvelle th\u00e9orie de la r\u00e9sistance des fluides",
+      "authors": "d'Alembert",
+      "year": 1752,
+      "abstract": "This paper by d'Alembert (1752) presents fundamental contributions to Fluid Dynamics. It has been cited 3500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p096",
+      "url": "https://doi.org/10.1000/p096",
+      "citations": 3500,
+      "community": 0
+    },
+    {
+      "id": "p097",
+      "title": "M\u00e9canique analytique",
+      "authors": "Lagrange",
+      "year": 1788,
+      "abstract": "This paper by Lagrange (1788) presents fundamental contributions to Classical Mechanics. It has been cited 6200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p097",
+      "url": "https://doi.org/10.1000/p097",
+      "citations": 6200,
+      "community": 0
+    },
+    {
+      "id": "p098",
+      "title": "On a General Method in Dynamics",
+      "authors": "Hamilton",
+      "year": 1834,
+      "abstract": "This paper by Hamilton (1834) presents fundamental contributions to Classical Mechanics. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p098",
+      "url": "https://doi.org/10.1000/p098",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p099",
+      "title": "Sur l'\u00e9limination des noeuds dans le probl\u00e8me des trois corps",
+      "authors": "Jacobi",
+      "year": 1842,
+      "abstract": "This paper by Jacobi (1842) presents fundamental contributions to Celestial Mechanics. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p099",
+      "url": "https://doi.org/10.1000/p099",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p100",
+      "title": "Sur le probl\u00e8me des trois corps et les \u00e9quations de la dynamique",
+      "authors": "Poincar\u00e9",
+      "year": 1890,
+      "abstract": "This paper by Poincar\u00e9 (1890) presents fundamental contributions to Chaos Theory. It has been cited 7100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p100",
+      "url": "https://doi.org/10.1000/p100",
+      "citations": 7100,
+      "community": 0
+    },
+    {
+      "id": "p101",
+      "title": "The General Problem of the Stability of Motion",
+      "authors": "Lyapunov",
+      "year": 1892,
+      "abstract": "This paper by Lyapunov (1892) presents fundamental contributions to Stability Theory. It has been cited 4600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p101",
+      "url": "https://doi.org/10.1000/p101",
+      "citations": 4600,
+      "community": 0
+    },
+    {
+      "id": "p102",
+      "title": "On the Conservation of Conditionally Periodic Motions",
+      "authors": "KAM",
+      "year": 1963,
+      "abstract": "This paper by KAM (1963) presents fundamental contributions to Dynamical Systems. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p102",
+      "url": "https://doi.org/10.1000/p102",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p103",
+      "title": "Proof of a Theorem of A. N. Kolmogorov",
+      "authors": "Arnold",
+      "year": 1963,
+      "abstract": "This paper by Arnold (1963) presents fundamental contributions to Dynamical Systems. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p103",
+      "url": "https://doi.org/10.1000/p103",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p104",
+      "title": "On Invariant Curves of Area-Preserving Mappings",
+      "authors": "Moser",
+      "year": 1962,
+      "abstract": "This paper by Moser (1962) presents fundamental contributions to Dynamical Systems. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p104",
+      "url": "https://doi.org/10.1000/p104",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p105",
+      "title": "Differentiable Dynamical Systems",
+      "authors": "Smale",
+      "year": 1967,
+      "abstract": "This paper by Smale (1967) presents fundamental contributions to Chaos Theory. It has been cited 5900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p105",
+      "url": "https://doi.org/10.1000/p105",
+      "citations": 5900,
+      "community": 0
+    },
+    {
+      "id": "p106",
+      "title": "Deterministic Nonperiodic Flow",
+      "authors": "Lorenz",
+      "year": 1963,
+      "abstract": "This paper by Lorenz (1963) presents fundamental contributions to Chaos Theory. It has been cited 8500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p106",
+      "url": "https://doi.org/10.1000/p106",
+      "citations": 8500,
+      "community": 0
+    },
+    {
+      "id": "p107",
+      "title": "Quantitative Universality for a Class of Nonlinear Transformations",
+      "authors": "Feigenbaum",
+      "year": 1978,
+      "abstract": "This paper by Feigenbaum (1978) presents fundamental contributions to Chaos. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p107",
+      "url": "https://doi.org/10.1000/p107",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p108",
+      "title": "On the Nature of Turbulence",
+      "authors": "Ruelle",
+      "year": 1971,
+      "abstract": "This paper by Ruelle (1971) presents fundamental contributions to Strange Attractors. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p108",
+      "url": "https://doi.org/10.1000/p108",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p109",
+      "title": "Detecting Strange Attractors in Turbulence",
+      "authors": "Takens",
+      "year": 1981,
+      "abstract": "This paper by Takens (1981) presents fundamental contributions to Dynamical Systems. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p109",
+      "url": "https://doi.org/10.1000/p109",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p110",
+      "title": "How Long Is the Coast of Britain",
+      "authors": "Mandelbrot",
+      "year": 1967,
+      "abstract": "This paper by Mandelbrot (1967) presents fundamental contributions to Fractals. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p110",
+      "url": "https://doi.org/10.1000/p110",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p111",
+      "title": "The Fractal Geometry of Nature",
+      "authors": "Mandelbrot",
+      "year": 1982,
+      "abstract": "This paper by Mandelbrot (1982) presents fundamental contributions to Fractals. It has been cited 8100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p111",
+      "url": "https://doi.org/10.1000/p111",
+      "citations": 8100,
+      "community": 0
+    },
+    {
+      "id": "p112",
+      "title": "Les objets fractals",
+      "authors": "Benoit",
+      "year": 1975,
+      "abstract": "This paper by Benoit (1975) presents fundamental contributions to Fractals. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p112",
+      "url": "https://doi.org/10.1000/p112",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p113",
+      "title": "Th\u00e9orie analytique de la chaleur",
+      "authors": "Fourier",
+      "year": 1822,
+      "abstract": "This paper by Fourier (1822) presents fundamental contributions to Heat Equation. It has been cited 5500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p113",
+      "url": "https://doi.org/10.1000/p113",
+      "citations": 5500,
+      "community": 0
+    },
+    {
+      "id": "p114",
+      "title": "Trait\u00e9 de m\u00e9canique c\u00e9leste",
+      "authors": "Laplace",
+      "year": 1799,
+      "abstract": "This paper by Laplace (1799) presents fundamental contributions to Celestial Mechanics. It has been cited 6100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p114",
+      "url": "https://doi.org/10.1000/p114",
+      "citations": 6100,
+      "community": 0
+    },
+    {
+      "id": "p115",
+      "title": "Theoria motus corporum coelestium",
+      "authors": "Gauss",
+      "year": 1809,
+      "abstract": "This paper by Gauss (1809) presents fundamental contributions to Orbit Determination. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p115",
+      "url": "https://doi.org/10.1000/p115",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p116",
+      "title": "Nouvelles m\u00e9thodes pour la d\u00e9termination des orbites des com\u00e8tes",
+      "authors": "Legendre",
+      "year": 1805,
+      "abstract": "This paper by Legendre (1805) presents fundamental contributions to Least Squares. It has been cited 4200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p116",
+      "url": "https://doi.org/10.1000/p116",
+      "citations": 4200,
+      "community": 0
+    },
+    {
+      "id": "p117",
+      "title": "Fundamenta astronomiae",
+      "authors": "Bessel",
+      "year": 1818,
+      "abstract": "This paper by Bessel (1818) presents fundamental contributions to Astrometry. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p117",
+      "url": "https://doi.org/10.1000/p117",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p118",
+      "title": "Etudes d'astronomie stellaire",
+      "authors": "Struve",
+      "year": 1847,
+      "abstract": "This paper by Struve (1847) presents fundamental contributions to Stellar Astronomy. It has been cited 2900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p118",
+      "url": "https://doi.org/10.1000/p118",
+      "citations": 2900,
+      "community": 0
+    },
+    {
+      "id": "p119",
+      "title": "On the Construction of the Heavens",
+      "authors": "Herschel",
+      "year": 1785,
+      "abstract": "This paper by Herschel (1785) presents fundamental contributions to Galaxy Structure. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p119",
+      "url": "https://doi.org/10.1000/p119",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p120",
+      "title": "Allgemeine Naturgeschichte und Theorie des Himmels",
+      "authors": "Kant",
+      "year": 1755,
+      "abstract": "This paper by Kant (1755) presents fundamental contributions to Cosmogony. It has been cited 3600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p120",
+      "url": "https://doi.org/10.1000/p120",
+      "citations": 3600,
+      "community": 0
+    },
+    {
+      "id": "p121",
+      "title": "Exposition du syst\u00e8me du monde",
+      "authors": "Laplace",
+      "year": 1796,
+      "abstract": "This paper by Laplace (1796) presents fundamental contributions to Nebular Hypothesis. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p121",
+      "url": "https://doi.org/10.1000/p121",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p122",
+      "title": "Further Observations on the Spectra of Some of the Stars and Nebulae",
+      "authors": "Huggins",
+      "year": 1868,
+      "abstract": "This paper by Huggins (1868) presents fundamental contributions to Spectroscopy. It has been cited 3200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p122",
+      "url": "https://doi.org/10.1000/p122",
+      "citations": 3200,
+      "community": 0
+    },
+    {
+      "id": "p123",
+      "title": "On the Relation Between the Emission and Absorption Spectra",
+      "authors": "Kirchhoff",
+      "year": 1860,
+      "abstract": "This paper by Kirchhoff (1860) presents fundamental contributions to Spectroscopy. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p123",
+      "url": "https://doi.org/10.1000/p123",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p124",
+      "title": "Chemische Analyse durch Spectralbeobachtungen",
+      "authors": "Bunsen",
+      "year": 1860,
+      "abstract": "This paper by Bunsen (1860) presents fundamental contributions to Spectroscopy. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p124",
+      "url": "https://doi.org/10.1000/p124",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p125",
+      "title": "Bestimmung des Brechungs- und Farbenzerstreuungsverm\u00f6gens",
+      "authors": "Fraunhofer",
+      "year": 1817,
+      "abstract": "This paper by Fraunhofer (1817) presents fundamental contributions to Spectroscopy. It has been cited 3500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p125",
+      "url": "https://doi.org/10.1000/p125",
+      "citations": 3500,
+      "community": 0
+    },
+    {
+      "id": "p126",
+      "title": "A Dynamical Theory of the Electromagnetic Field",
+      "authors": "Maxwell",
+      "year": 1865,
+      "abstract": "This paper by Maxwell (1865) presents fundamental contributions to Electromagnetism. It has been cited 9200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p126",
+      "url": "https://doi.org/10.1000/p126",
+      "citations": 9200,
+      "community": 0
+    },
+    {
+      "id": "p127",
+      "title": "On the Magnetization of Light and the Illumination of Magnetic Lines of Force",
+      "authors": "Faraday",
+      "year": 1846,
+      "abstract": "This paper by Faraday (1846) presents fundamental contributions to EM Fields. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p127",
+      "url": "https://doi.org/10.1000/p127",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p128",
+      "title": "M\u00e9moire sur la th\u00e9orie math\u00e9matique des ph\u00e9nom\u00e8nes \u00e9lectrodynamiques",
+      "authors": "Amp\u00e8re",
+      "year": 1826,
+      "abstract": "This paper by Amp\u00e8re (1826) presents fundamental contributions to Electrodynamics. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p128",
+      "url": "https://doi.org/10.1000/p128",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p129",
+      "title": "Pr\u00e9cis \u00e9l\u00e9mentaire de physique exp\u00e9rimentale",
+      "authors": "Biot",
+      "year": 1820,
+      "abstract": "This paper by Biot (1820) presents fundamental contributions to Magnetism. It has been cited 3200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p129",
+      "url": "https://doi.org/10.1000/p129",
+      "citations": 3200,
+      "community": 0
+    },
+    {
+      "id": "p130",
+      "title": "Note sur le magn\u00e9tisme de la pile de Volta",
+      "authors": "Savart",
+      "year": 1820,
+      "abstract": "This paper by Savart (1820) presents fundamental contributions to Electromagnetism. It has been cited 2800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p130",
+      "url": "https://doi.org/10.1000/p130",
+      "citations": 2800,
+      "community": 0
+    },
+    {
+      "id": "p131",
+      "title": "Experimenta circa effectum conflictus electrici in acum magneticam",
+      "authors": "Oersted",
+      "year": 1820,
+      "abstract": "This paper by Oersted (1820) presents fundamental contributions to Electromagnetism. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p131",
+      "url": "https://doi.org/10.1000/p131",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p132",
+      "title": "Premier m\u00e9moire sur l'\u00e9lectricit\u00e9 et le magn\u00e9tisme",
+      "authors": "Coulomb",
+      "year": 1785,
+      "abstract": "This paper by Coulomb (1785) presents fundamental contributions to Electrostatics. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p132",
+      "url": "https://doi.org/10.1000/p132",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p133",
+      "title": "M\u00e9moire sur la distribution de l'\u00e9lectricit\u00e9 \u00e0 la surface des corps conducteurs",
+      "authors": "Poisson",
+      "year": 1812,
+      "abstract": "This paper by Poisson (1812) presents fundamental contributions to Potential Theory. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p133",
+      "url": "https://doi.org/10.1000/p133",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p134",
+      "title": "An Essay on the Application of Mathematical Analysis to Electricity and Magnetism",
+      "authors": "Green",
+      "year": 1828,
+      "abstract": "This paper by Green (1828) presents fundamental contributions to Potential Theory. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p134",
+      "url": "https://doi.org/10.1000/p134",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p135",
+      "title": "On an Absolute Thermometric Scale",
+      "authors": "Thomson",
+      "year": 1848,
+      "abstract": "This paper by Thomson (1848) presents fundamental contributions to Thermodynamics. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p135",
+      "url": "https://doi.org/10.1000/p135",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p136",
+      "title": "\u00dcber die bewegende Kraft der W\u00e4rme",
+      "authors": "Clausius",
+      "year": 1850,
+      "abstract": "This paper by Clausius (1850) presents fundamental contributions to Thermodynamics. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p136",
+      "url": "https://doi.org/10.1000/p136",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p137",
+      "title": "Weitere Studien \u00fcber das W\u00e4rmegleichgewicht unter Gasmolek\u00fclen",
+      "authors": "Boltzmann",
+      "year": 1872,
+      "abstract": "This paper by Boltzmann (1872) presents fundamental contributions to Statistical Mechanics. It has been cited 6100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p137",
+      "url": "https://doi.org/10.1000/p137",
+      "citations": 6100,
+      "community": 0
+    },
+    {
+      "id": "p138",
+      "title": "Elementary Principles in Statistical Mechanics",
+      "authors": "Gibbs",
+      "year": 1902,
+      "abstract": "This paper by Gibbs (1902) presents fundamental contributions to Statistical Mechanics. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p138",
+      "url": "https://doi.org/10.1000/p138",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p139",
+      "title": "Zur Theorie des Gesetzes der Energieverteilung",
+      "authors": "Planck",
+      "year": 1900,
+      "abstract": "This paper by Planck (1900) presents fundamental contributions to Quantum Theory. It has been cited 8900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p139",
+      "url": "https://doi.org/10.1000/p139",
+      "citations": 8900,
+      "community": 0
+    },
+    {
+      "id": "p140",
+      "title": "\u00dcber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
+      "authors": "Einstein",
+      "year": 1905,
+      "abstract": "This paper by Einstein (1905) presents fundamental contributions to Photoelectric Effect. It has been cited 7800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p140",
+      "url": "https://doi.org/10.1000/p140",
+      "citations": 7800,
+      "community": 0
+    },
+    {
+      "id": "p141",
+      "title": "On the Constitution of Atoms and Molecules",
+      "authors": "Bohr",
+      "year": 1913,
+      "abstract": "This paper by Bohr (1913) presents fundamental contributions to Atomic Structure. It has been cited 8500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p141",
+      "url": "https://doi.org/10.1000/p141",
+      "citations": 8500,
+      "community": 0
+    },
+    {
+      "id": "p142",
+      "title": "Quantisierung als Eigenwertproblem",
+      "authors": "Schr\u00f6dinger",
+      "year": 1926,
+      "abstract": "This paper by Schr\u00f6dinger (1926) presents fundamental contributions to Wave Mechanics. It has been cited 9200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p142",
+      "url": "https://doi.org/10.1000/p142",
+      "citations": 9200,
+      "community": 0
+    },
+    {
+      "id": "p143",
+      "title": "\u00dcber quantentheoretischer Umdeutung kinematischer und mechanischer Beziehungen",
+      "authors": "Heisenberg",
+      "year": 1925,
+      "abstract": "This paper by Heisenberg (1925) presents fundamental contributions to Matrix Mechanics. It has been cited 8100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p143",
+      "url": "https://doi.org/10.1000/p143",
+      "citations": 8100,
+      "community": 0
+    },
+    {
+      "id": "p144",
+      "title": "Zur Quantenmechanik der Sto\u00dfvorg\u00e4nge",
+      "authors": "Born",
+      "year": 1926,
+      "abstract": "This paper by Born (1926) presents fundamental contributions to Probability Interpretation. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p144",
+      "url": "https://doi.org/10.1000/p144",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p145",
+      "title": "The Quantum Theory of the Electron",
+      "authors": "Dirac",
+      "year": 1928,
+      "abstract": "This paper by Dirac (1928) presents fundamental contributions to Relativistic QM. It has been cited 8800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p145",
+      "url": "https://doi.org/10.1000/p145",
+      "citations": 8800,
+      "community": 0
+    },
+    {
+      "id": "p146",
+      "title": "\u00dcber den Zusammenhang des Abschlusses der Elektronengruppen",
+      "authors": "Pauli",
+      "year": 1925,
+      "abstract": "This paper by Pauli (1925) presents fundamental contributions to Exclusion Principle. It has been cited 7500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p146",
+      "url": "https://doi.org/10.1000/p146",
+      "citations": 7500,
+      "community": 0
+    },
+    {
+      "id": "p147",
+      "title": "Sulla quantizzazione del gas perfetto monoatomico",
+      "authors": "Fermi",
+      "year": 1926,
+      "abstract": "This paper by Fermi (1926) presents fundamental contributions to Fermi-Dirac Statistics. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p147",
+      "url": "https://doi.org/10.1000/p147",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p148",
+      "title": "The Principles of Quantum Mechanics",
+      "authors": "Dirac",
+      "year": 1930,
+      "abstract": "This paper by Dirac (1930) presents fundamental contributions to Quantum Theory. It has been cited 7900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p148",
+      "url": "https://doi.org/10.1000/p148",
+      "citations": 7900,
+      "community": 0
+    },
+    {
+      "id": "p149",
+      "title": "Mathematische Grundlagen der Quantenmechanik",
+      "authors": "von Neumann",
+      "year": 1932,
+      "abstract": "This paper by von Neumann (1932) presents fundamental contributions to Quantum Foundations. It has been cited 6200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p149",
+      "url": "https://doi.org/10.1000/p149",
+      "citations": 6200,
+      "community": 0
+    },
+    {
+      "id": "p150",
+      "title": "On the Einstein Podolsky Rosen Paradox",
+      "authors": "Bell",
+      "year": 1964,
+      "abstract": "This paper by Bell (1964) presents fundamental contributions to Quantum Entanglement. It has been cited 8500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p150",
+      "url": "https://doi.org/10.1000/p150",
+      "citations": 8500,
+      "community": 0
+    },
+    {
+      "id": "p151",
+      "title": "Experimental Test of Bell's Inequalities",
+      "authors": "Aspect",
+      "year": 1982,
+      "abstract": "This paper by Aspect (1982) presents fundamental contributions to Quantum Nonlocality. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p151",
+      "url": "https://doi.org/10.1000/p151",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p152",
+      "title": "Experimental Entanglement Swapping",
+      "authors": "Zeilinger",
+      "year": 1997,
+      "abstract": "This paper by Zeilinger (1997) presents fundamental contributions to Quantum Information. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p152",
+      "url": "https://doi.org/10.1000/p152",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p153",
+      "title": "Algorithms for Quantum Computation",
+      "authors": "Shor",
+      "year": 1994,
+      "abstract": "This paper by Shor (1994) presents fundamental contributions to Quantum Computing. It has been cited 6900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p153",
+      "url": "https://doi.org/10.1000/p153",
+      "citations": 6900,
+      "community": 0
+    },
+    {
+      "id": "p154",
+      "title": "A Fast Quantum Mechanical Algorithm for Database Search",
+      "authors": "Grover",
+      "year": 1996,
+      "abstract": "This paper by Grover (1996) presents fundamental contributions to Quantum Algorithms. It has been cited 6100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p154",
+      "url": "https://doi.org/10.1000/p154",
+      "citations": 6100,
+      "community": 0
+    },
+    {
+      "id": "p155",
+      "title": "Space-Time Approach to Non-Relativistic Quantum Mechanics",
+      "authors": "Feynman",
+      "year": 1948,
+      "abstract": "This paper by Feynman (1948) presents fundamental contributions to Path Integrals. It has been cited 7400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p155",
+      "url": "https://doi.org/10.1000/p155",
+      "citations": 7400,
+      "community": 0
+    },
+    {
+      "id": "p156",
+      "title": "The Feynman Lectures on Physics",
+      "authors": "Feynman",
+      "year": 1965,
+      "abstract": "This paper by Feynman (1965) presents fundamental contributions to Physics Education. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p156",
+      "url": "https://doi.org/10.1000/p156",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p157",
+      "title": "Isotopic Spin and New Unstable Particles",
+      "authors": "Gell-Mann",
+      "year": 1953,
+      "abstract": "This paper by Gell-Mann (1953) presents fundamental contributions to Particle Physics. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p157",
+      "url": "https://doi.org/10.1000/p157",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p158",
+      "title": "Charge Independence Theory of V Particles",
+      "authors": "Nishijima",
+      "year": 1955,
+      "abstract": "This paper by Nishijima (1955) presents fundamental contributions to Strangeness. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p158",
+      "url": "https://doi.org/10.1000/p158",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p159",
+      "title": "A Systematics of Hadrons in Subnuclear Physics",
+      "authors": "Nambu",
+      "year": 1966,
+      "abstract": "This paper by Nambu (1966) presents fundamental contributions to String Theory. It has been cited 4500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p159",
+      "url": "https://doi.org/10.1000/p159",
+      "citations": 4500,
+      "community": 0
+    },
+    {
+      "id": "p160",
+      "title": "Construction of a Crossing-Symmetric Regge Behaved Amplitude",
+      "authors": "Veneziano",
+      "year": 1968,
+      "abstract": "This paper by Veneziano (1968) presents fundamental contributions to String Theory. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p160",
+      "url": "https://doi.org/10.1000/p160",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p161",
+      "title": "Dual-Symmetric Theory of Hadrons",
+      "authors": "Susskind",
+      "year": 1970,
+      "abstract": "This paper by Susskind (1970) presents fundamental contributions to String Theory. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p161",
+      "url": "https://doi.org/10.1000/p161",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p162",
+      "title": "Superstring Theory",
+      "authors": "Green",
+      "year": 1984,
+      "abstract": "This paper by Green (1984) presents fundamental contributions to Superstrings. It has been cited 5600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p162",
+      "url": "https://doi.org/10.1000/p162",
+      "citations": 5600,
+      "community": 0
+    },
+    {
+      "id": "p163",
+      "title": "Superstring Theory",
+      "authors": "Schwarz",
+      "year": 1984,
+      "abstract": "This paper by Schwarz (1984) presents fundamental contributions to Superstrings. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p163",
+      "url": "https://doi.org/10.1000/p163",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p164",
+      "title": "String Theory Dynamics in Various Dimensions",
+      "authors": "Witten",
+      "year": 1995,
+      "abstract": "This paper by Witten (1995) presents fundamental contributions to M-Theory. It has been cited 6800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p164",
+      "url": "https://doi.org/10.1000/p164",
+      "citations": 6800,
+      "community": 0
+    },
+    {
+      "id": "p165",
+      "title": "The Large N Limit of Superconformal Field Theories",
+      "authors": "Maldacena",
+      "year": 1998,
+      "abstract": "This paper by Maldacena (1998) presents fundamental contributions to AdS/CFT. It has been cited 8200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p165",
+      "url": "https://doi.org/10.1000/p165",
+      "citations": 8200,
+      "community": 0
+    },
+    {
+      "id": "p166",
+      "title": "Anti-de Sitter Space and Holography",
+      "authors": "Witten",
+      "year": 1998,
+      "abstract": "This paper by Witten (1998) presents fundamental contributions to Holography. It has been cited 7100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p166",
+      "url": "https://doi.org/10.1000/p166",
+      "citations": 7100,
+      "community": 0
+    },
+    {
+      "id": "p167",
+      "title": "The World as a Hologram",
+      "authors": "Susskind",
+      "year": 1995,
+      "abstract": "This paper by Susskind (1995) presents fundamental contributions to Holographic Principle. It has been cited 5900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p167",
+      "url": "https://doi.org/10.1000/p167",
+      "citations": 5900,
+      "community": 0
+    },
+    {
+      "id": "p168",
+      "title": "A Covariant Entropy Conjecture",
+      "authors": "Bousso",
+      "year": 1999,
+      "abstract": "This paper by Bousso (1999) presents fundamental contributions to Entropy Bounds. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p168",
+      "url": "https://doi.org/10.1000/p168",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p169",
+      "title": "Information in Black Hole Radiation",
+      "authors": "Page",
+      "year": 1993,
+      "abstract": "This paper by Page (1993) presents fundamental contributions to Black Hole Information. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p169",
+      "url": "https://doi.org/10.1000/p169",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p170",
+      "title": "Do Black Holes Destroy Information",
+      "authors": "Preskill",
+      "year": 1992,
+      "abstract": "This paper by Preskill (1992) presents fundamental contributions to Information Paradox. It has been cited 4700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p170",
+      "url": "https://doi.org/10.1000/p170",
+      "citations": 4700,
+      "community": 0
+    },
+    {
+      "id": "p171",
+      "title": "Hawking Radiation as Tunneling",
+      "authors": "Parikh",
+      "year": 2000,
+      "abstract": "This paper by Parikh (2000) presents fundamental contributions to Black Hole Evaporation. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p171",
+      "url": "https://doi.org/10.1000/p171",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p172",
+      "title": "The Information Paradox: A Pedagogical Introduction",
+      "authors": "Mathur",
+      "year": 2009,
+      "abstract": "This paper by Mathur (2009) presents fundamental contributions to Fuzzballs. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p172",
+      "url": "https://doi.org/10.1000/p172",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p173",
+      "title": "Microscopic Origin of the Bekenstein-Hawking Entropy",
+      "authors": "Strominger",
+      "year": 1996,
+      "abstract": "This paper by Strominger (1996) presents fundamental contributions to Black Hole Entropy. It has been cited 5500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p173",
+      "url": "https://doi.org/10.1000/p173",
+      "citations": 5500,
+      "community": 0
+    },
+    {
+      "id": "p174",
+      "title": "Microscopic Origin of Bekenstein-Hawking Entropy",
+      "authors": "Vafa",
+      "year": 1996,
+      "abstract": "This paper by Vafa (1996) presents fundamental contributions to String Theory. It has been cited 5100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p174",
+      "url": "https://doi.org/10.1000/p174",
+      "citations": 5100,
+      "community": 0
+    },
+    {
+      "id": "p175",
+      "title": "Counting States of Near-Extremal Black Holes",
+      "authors": "Horowitz",
+      "year": 1996,
+      "abstract": "This paper by Horowitz (1996) presents fundamental contributions to Black Holes. It has been cited 4600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p175",
+      "url": "https://doi.org/10.1000/p175",
+      "citations": 4600,
+      "community": 0
+    },
+    {
+      "id": "p176",
+      "title": "Dirichlet-Branes and Ramond-Ramond Charges",
+      "authors": "Polchinski",
+      "year": 1995,
+      "abstract": "This paper by Polchinski (1995) presents fundamental contributions to D-Branes. It has been cited 6200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p176",
+      "url": "https://doi.org/10.1000/p176",
+      "citations": 6200,
+      "community": 0
+    },
+    {
+      "id": "p177",
+      "title": "String Theory Vol. 1 & 2",
+      "authors": "Polchinski",
+      "year": 1998,
+      "abstract": "This paper by Polchinski (1998) presents fundamental contributions to String Theory. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p177",
+      "url": "https://doi.org/10.1000/p177",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p178",
+      "title": "String Theory and M-Theory",
+      "authors": "Becker",
+      "year": 2007,
+      "abstract": "This paper by Becker (2007) presents fundamental contributions to String Theory. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p178",
+      "url": "https://doi.org/10.1000/p178",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p179",
+      "title": "A First Course in String Theory",
+      "authors": "Zwiebach",
+      "year": 2004,
+      "abstract": "This paper by Zwiebach (2004) presents fundamental contributions to String Theory. It has been cited 3800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p179",
+      "url": "https://doi.org/10.1000/p179",
+      "citations": 3800,
+      "community": 0
+    },
+    {
+      "id": "p180",
+      "title": "The Quantum Theory of Fields",
+      "authors": "Weinberg",
+      "year": 1995,
+      "abstract": "This paper by Weinberg (1995) presents fundamental contributions to QFT. It has been cited 6500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p180",
+      "url": "https://doi.org/10.1000/p180",
+      "citations": 6500,
+      "community": 0
+    },
+    {
+      "id": "p181",
+      "title": "An Introduction to Quantum Field Theory",
+      "authors": "Peskin",
+      "year": 1995,
+      "abstract": "This paper by Peskin (1995) presents fundamental contributions to QFT. It has been cited 7200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p181",
+      "url": "https://doi.org/10.1000/p181",
+      "citations": 7200,
+      "community": 0
+    },
+    {
+      "id": "p182",
+      "title": "Quantum Field Theory in a Nutshell",
+      "authors": "Zee",
+      "year": 2003,
+      "abstract": "This paper by Zee (2003) presents fundamental contributions to QFT. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p182",
+      "url": "https://doi.org/10.1000/p182",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p183",
+      "title": "Quantum Field Theory",
+      "authors": "Srednicki",
+      "year": 2007,
+      "abstract": "This paper by Srednicki (2007) presents fundamental contributions to QFT. It has been cited 4300 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p183",
+      "url": "https://doi.org/10.1000/p183",
+      "citations": 4300,
+      "community": 0
+    },
+    {
+      "id": "p184",
+      "title": "Quantum Field Theory",
+      "authors": "Ryder",
+      "year": 1985,
+      "abstract": "This paper by Ryder (1985) presents fundamental contributions to QFT. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p184",
+      "url": "https://doi.org/10.1000/p184",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p185",
+      "title": "Quantum Fields",
+      "authors": "Bogoliubov",
+      "year": 1980,
+      "abstract": "This paper by Bogoliubov (1980) presents fundamental contributions to QFT. It has been cited 3200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p185",
+      "url": "https://doi.org/10.1000/p185",
+      "citations": 3200,
+      "community": 0
+    },
+    {
+      "id": "p186",
+      "title": "Quantum Field Theory",
+      "authors": "Itzykson",
+      "year": 1980,
+      "abstract": "This paper by Itzykson (1980) presents fundamental contributions to QFT. It has been cited 3600 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p186",
+      "url": "https://doi.org/10.1000/p186",
+      "citations": 3600,
+      "community": 0
+    },
+    {
+      "id": "p187",
+      "title": "Quantum Field Theory",
+      "authors": "Zuber",
+      "year": 1980,
+      "abstract": "This paper by Zuber (1980) presents fundamental contributions to QFT. It has been cited 3400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p187",
+      "url": "https://doi.org/10.1000/p187",
+      "citations": 3400,
+      "community": 0
+    },
+    {
+      "id": "p188",
+      "title": "Aspects of Symmetry",
+      "authors": "Coleman",
+      "year": 1985,
+      "abstract": "This paper by Coleman (1985) presents fundamental contributions to QFT. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p188",
+      "url": "https://doi.org/10.1000/p188",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p189",
+      "title": "Gauge Theories with Unified Weak, Electromagnetic and Strong Interactions",
+      "authors": "t Hooft",
+      "year": 1980,
+      "abstract": "This paper by t Hooft (1980) presents fundamental contributions to Grand Unification. It has been cited 4100 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p189",
+      "url": "https://doi.org/10.1000/p189",
+      "citations": 4100,
+      "community": 0
+    },
+    {
+      "id": "p190",
+      "title": "Unity of All Elementary Particle Forces",
+      "authors": "Georgi",
+      "year": 1974,
+      "abstract": "This paper by Georgi (1974) presents fundamental contributions to GUT. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p190",
+      "url": "https://doi.org/10.1000/p190",
+      "citations": 5200,
+      "community": 0
+    },
+    {
+      "id": "p191",
+      "title": "Unity of All Elementary Particle Forces",
+      "authors": "Glashow",
+      "year": 1974,
+      "abstract": "This paper by Glashow (1974) presents fundamental contributions to GUT. It has been cited 4800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p191",
+      "url": "https://doi.org/10.1000/p191",
+      "citations": 4800,
+      "community": 0
+    },
+    {
+      "id": "p192",
+      "title": "Unified Lepton-Hadron Symmetry and a Gauge Theory of the Basic Interactions",
+      "authors": "Pati",
+      "year": 1974,
+      "abstract": "This paper by Pati (1974) presents fundamental contributions to GUT. It has been cited 3900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p192",
+      "url": "https://doi.org/10.1000/p192",
+      "citations": 3900,
+      "community": 0
+    },
+    {
+      "id": "p193",
+      "title": "Unified Lepton-Hadron Symmetry",
+      "authors": "Salam",
+      "year": 1974,
+      "abstract": "This paper by Salam (1974) presents fundamental contributions to GUT. It has been cited 3700 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p193",
+      "url": "https://doi.org/10.1000/p193",
+      "citations": 3700,
+      "community": 0
+    },
+    {
+      "id": "p194",
+      "title": "Inflationary Universe: A Possible Solution to the Horizon and Flatness Problems",
+      "authors": "Guth",
+      "year": 1981,
+      "abstract": "This paper by Guth (1981) presents fundamental contributions to Inflation. It has been cited 7800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p194",
+      "url": "https://doi.org/10.1000/p194",
+      "citations": 7800,
+      "community": 0
+    },
+    {
+      "id": "p195",
+      "title": "A New Inflationary Universe Scenario",
+      "authors": "Linde",
+      "year": 1982,
+      "abstract": "This paper by Linde (1982) presents fundamental contributions to Inflation. It has been cited 6500 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p195",
+      "url": "https://doi.org/10.1000/p195",
+      "citations": 6500,
+      "community": 0
+    },
+    {
+      "id": "p196",
+      "title": "Cosmology for Grand Unified Theories with Radiatively Induced Symmetry Breaking",
+      "authors": "Albrecht",
+      "year": 1982,
+      "abstract": "This paper by Albrecht (1982) presents fundamental contributions to Inflation. It has been cited 5400 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p196",
+      "url": "https://doi.org/10.1000/p196",
+      "citations": 5400,
+      "community": 0
+    },
+    {
+      "id": "p197",
+      "title": "Cosmology for Grand Unified Theories",
+      "authors": "Steinhardt",
+      "year": 1982,
+      "abstract": "This paper by Steinhardt (1982) presents fundamental contributions to Inflation. It has been cited 4900 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p197",
+      "url": "https://doi.org/10.1000/p197",
+      "citations": 4900,
+      "community": 0
+    },
+    {
+      "id": "p198",
+      "title": "Chaotic Inflation",
+      "authors": "Linde",
+      "year": 1983,
+      "abstract": "This paper by Linde (1983) presents fundamental contributions to Inflation. It has been cited 5800 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p198",
+      "url": "https://doi.org/10.1000/p198",
+      "citations": 5800,
+      "community": 0
+    },
+    {
+      "id": "p199",
+      "title": "A New Type of Isotropic Cosmological Models Without Singularity",
+      "authors": "Starobinsky",
+      "year": 1980,
+      "abstract": "This paper by Starobinsky (1980) presents fundamental contributions to Inflation. It has been cited 5200 times and remains a cornerstone in the field.",
+      "doi": "10.1000/p199",
+      "url": "https://doi.org/10.1000/p199",
+      "citations": 5200,
+      "community": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "p002",
+      "target": "p006",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p002",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p006",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p003",
+      "target": "p004",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p003",
+      "target": "p053",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p003",
+      "target": "p057",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p003",
+      "target": "p061",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p004",
+      "target": "p053",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p004",
+      "target": "p057",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p004",
+      "target": "p061",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p053",
+      "target": "p057",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p053",
+      "target": "p061",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p057",
+      "target": "p061",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p009",
+      "target": "p135",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p009",
+      "target": "p136",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p135",
+      "target": "p136",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p015",
+      "target": "p017",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p018",
+      "target": "p077",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p019",
+      "target": "p076",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p019",
+      "target": "p078",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p076",
+      "target": "p078",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p020",
+      "target": "p119",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p021",
+      "target": "p068",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p021",
+      "target": "p070",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p021",
+      "target": "p071",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p068",
+      "target": "p070",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p068",
+      "target": "p071",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p070",
+      "target": "p071",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p023",
+      "target": "p024",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p023",
+      "target": "p056",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p023",
+      "target": "p075",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p024",
+      "target": "p056",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p024",
+      "target": "p075",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p056",
+      "target": "p075",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p027",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p030",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p030",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p030",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p030",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p180",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p180",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p180",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p180",
+      "target": "p184",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p181",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p181",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p181",
+      "target": "p184",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p181",
+      "target": "p185",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p182",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p182",
+      "target": "p184",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p182",
+      "target": "p185",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p182",
+      "target": "p186",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p183",
+      "target": "p184",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p183",
+      "target": "p185",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p183",
+      "target": "p186",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p183",
+      "target": "p187",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p184",
+      "target": "p185",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p184",
+      "target": "p186",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p184",
+      "target": "p187",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p184",
+      "target": "p188",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p185",
+      "target": "p186",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p185",
+      "target": "p187",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p185",
+      "target": "p188",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p186",
+      "target": "p187",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p186",
+      "target": "p188",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p187",
+      "target": "p188",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p035",
+      "target": "p036",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p038",
+      "target": "p157",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p043",
+      "target": "p044",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p045",
+      "target": "p046",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p045",
+      "target": "p047",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p045",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p046",
+      "target": "p047",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p046",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p047",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p049",
+      "target": "p050",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p049",
+      "target": "p052",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p049",
+      "target": "p054",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p050",
+      "target": "p052",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p050",
+      "target": "p054",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p052",
+      "target": "p054",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p058",
+      "target": "p059",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p058",
+      "target": "p060",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p059",
+      "target": "p060",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p063",
+      "target": "p064",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p065",
+      "target": "p066",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p065",
+      "target": "p067",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p066",
+      "target": "p067",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p080",
+      "target": "p083",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p080",
+      "target": "p089",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p080",
+      "target": "p094",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p080",
+      "target": "p096",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p083",
+      "target": "p089",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p083",
+      "target": "p094",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p083",
+      "target": "p096",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p089",
+      "target": "p094",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p089",
+      "target": "p096",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p094",
+      "target": "p096",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p081",
+      "target": "p082",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p081",
+      "target": "p086",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p081",
+      "target": "p087",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p081",
+      "target": "p088",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p082",
+      "target": "p086",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p082",
+      "target": "p087",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p082",
+      "target": "p088",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p086",
+      "target": "p087",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p086",
+      "target": "p088",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p087",
+      "target": "p088",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p084",
+      "target": "p085",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p084",
+      "target": "p092",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p084",
+      "target": "p093",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p084",
+      "target": "p095",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p085",
+      "target": "p092",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p085",
+      "target": "p093",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p085",
+      "target": "p095",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p092",
+      "target": "p093",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p092",
+      "target": "p095",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p093",
+      "target": "p095",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p090",
+      "target": "p091",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p097",
+      "target": "p098",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p099",
+      "target": "p114",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p100",
+      "target": "p105",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p100",
+      "target": "p106",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p105",
+      "target": "p106",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p102",
+      "target": "p103",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p102",
+      "target": "p104",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p102",
+      "target": "p109",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p103",
+      "target": "p104",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p103",
+      "target": "p109",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p104",
+      "target": "p109",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p110",
+      "target": "p111",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p110",
+      "target": "p112",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p111",
+      "target": "p112",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p122",
+      "target": "p123",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p122",
+      "target": "p124",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p122",
+      "target": "p125",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p123",
+      "target": "p124",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p123",
+      "target": "p125",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p124",
+      "target": "p125",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p126",
+      "target": "p130",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p126",
+      "target": "p131",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p130",
+      "target": "p131",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p133",
+      "target": "p134",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p137",
+      "target": "p138",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p139",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p159",
+      "target": "p160",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p159",
+      "target": "p161",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p159",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p159",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p160",
+      "target": "p161",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p160",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p160",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p160",
+      "target": "p178",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p161",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p161",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p161",
+      "target": "p178",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p161",
+      "target": "p179",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p174",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p174",
+      "target": "p178",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p174",
+      "target": "p179",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p177",
+      "target": "p178",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p177",
+      "target": "p179",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p178",
+      "target": "p179",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p162",
+      "target": "p163",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p190",
+      "target": "p191",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p190",
+      "target": "p192",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p190",
+      "target": "p193",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p191",
+      "target": "p192",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p191",
+      "target": "p193",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p192",
+      "target": "p193",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p194",
+      "target": "p195",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p194",
+      "target": "p196",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p194",
+      "target": "p197",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p194",
+      "target": "p198",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p195",
+      "target": "p196",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p195",
+      "target": "p197",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p195",
+      "target": "p198",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p195",
+      "target": "p199",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p196",
+      "target": "p197",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p196",
+      "target": "p198",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p196",
+      "target": "p199",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p197",
+      "target": "p198",
+      "type": "cocitation",
+      "weight": 2
+    },
+    {
+      "source": "p197",
+      "target": "p199",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p198",
+      "target": "p199",
+      "type": "cocitation",
+      "weight": 3
+    },
+    {
+      "source": "p000",
+      "target": "p001",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p000",
+      "target": "p140",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p001",
+      "target": "p140",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p007",
+      "target": "p008",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p024",
+      "target": "p060",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p026",
+      "target": "p038",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p026",
+      "target": "p180",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p038",
+      "target": "p180",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p027",
+      "target": "p191",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p028",
+      "target": "p193",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p029",
+      "target": "p189",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p031",
+      "target": "p157",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p033",
+      "target": "p159",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p088",
+      "target": "p143",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p114",
+      "target": "p121",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p134",
+      "target": "p162",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p145",
+      "target": "p148",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p155",
+      "target": "p156",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p161",
+      "target": "p167",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p164",
+      "target": "p166",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p176",
+      "target": "p177",
+      "type": "citation",
+      "weight": 3
+    },
+    {
+      "source": "p001",
+      "target": "p002",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p003",
+      "target": "p005",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p004",
+      "target": "p005",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p006",
+      "target": "p012",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p006",
+      "target": "p013",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p007",
+      "target": "p009",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p007",
+      "target": "p010",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p007",
+      "target": "p011",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p008",
+      "target": "p009",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p008",
+      "target": "p010",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p008",
+      "target": "p011",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p008",
+      "target": "p012",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p009",
+      "target": "p010",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p009",
+      "target": "p011",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p009",
+      "target": "p012",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p010",
+      "target": "p011",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p010",
+      "target": "p012",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p011",
+      "target": "p012",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p012",
+      "target": "p013",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p012",
+      "target": "p014",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p013",
+      "target": "p014",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p015",
+      "target": "p016",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p015",
+      "target": "p020",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p015",
+      "target": "p021",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p016",
+      "target": "p017",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p016",
+      "target": "p020",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p016",
+      "target": "p021",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p017",
+      "target": "p020",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p017",
+      "target": "p021",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p018",
+      "target": "p019",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p020",
+      "target": "p021",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p020",
+      "target": "p024",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p021",
+      "target": "p024",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p022",
+      "target": "p023",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p023",
+      "target": "p027",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p026",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p028",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p029",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p030",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p031",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p025",
+      "target": "p032",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p026",
+      "target": "p028",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p026",
+      "target": "p029",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p026",
+      "target": "p030",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p026",
+      "target": "p031",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p026",
+      "target": "p032",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p027",
+      "target": "p031",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p027",
+      "target": "p032",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p027",
+      "target": "p033",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p027",
+      "target": "p034",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p028",
+      "target": "p029",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p028",
+      "target": "p030",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p028",
+      "target": "p031",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p028",
+      "target": "p032",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p028",
+      "target": "p035",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p029",
+      "target": "p030",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p030",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p032",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p033",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p034",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p035",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p036",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p031",
+      "target": "p038",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p033",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p034",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p035",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p036",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p032",
+      "target": "p038",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p033",
+      "target": "p034",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p033",
+      "target": "p035",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p033",
+      "target": "p036",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p034",
+      "target": "p035",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p034",
+      "target": "p036",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p035",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p035",
+      "target": "p038",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p036",
+      "target": "p037",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p036",
+      "target": "p038",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p037",
+      "target": "p038",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p038",
+      "target": "p045",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p039",
+      "target": "p040",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p039",
+      "target": "p041",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p040",
+      "target": "p041",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p042",
+      "target": "p043",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p042",
+      "target": "p044",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p042",
+      "target": "p047",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p042",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p043",
+      "target": "p047",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p043",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p044",
+      "target": "p047",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p044",
+      "target": "p048",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p045",
+      "target": "p049",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p045",
+      "target": "p050",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p046",
+      "target": "p049",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p046",
+      "target": "p050",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p046",
+      "target": "p053",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p049",
+      "target": "p053",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p050",
+      "target": "p053",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p051",
+      "target": "p052",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p053",
+      "target": "p054",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p054",
+      "target": "p061",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p055",
+      "target": "p056",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p055",
+      "target": "p057",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p055",
+      "target": "p058",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p055",
+      "target": "p059",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p055",
+      "target": "p060",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p056",
+      "target": "p057",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p056",
+      "target": "p058",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p056",
+      "target": "p059",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p056",
+      "target": "p060",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p057",
+      "target": "p058",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p057",
+      "target": "p059",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p057",
+      "target": "p060",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p061",
+      "target": "p062",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p063",
+      "target": "p068",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p064",
+      "target": "p068",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p069",
+      "target": "p070",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p069",
+      "target": "p071",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p072",
+      "target": "p073",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p072",
+      "target": "p074",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p073",
+      "target": "p074",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p075",
+      "target": "p076",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p075",
+      "target": "p078",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p077",
+      "target": "p080",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p077",
+      "target": "p081",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p080",
+      "target": "p081",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p084",
+      "target": "p086",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p084",
+      "target": "p088",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p085",
+      "target": "p086",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p089",
+      "target": "p090",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p093",
+      "target": "p099",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p100",
+      "target": "p101",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p102",
+      "target": "p105",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p102",
+      "target": "p106",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p103",
+      "target": "p105",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p103",
+      "target": "p106",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p103",
+      "target": "p110",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p104",
+      "target": "p105",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p104",
+      "target": "p106",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p104",
+      "target": "p110",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p105",
+      "target": "p108",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p105",
+      "target": "p110",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p106",
+      "target": "p110",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p107",
+      "target": "p109",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p107",
+      "target": "p111",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p107",
+      "target": "p112",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p108",
+      "target": "p110",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p108",
+      "target": "p112",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p109",
+      "target": "p111",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p113",
+      "target": "p117",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p115",
+      "target": "p116",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p122",
+      "target": "p126",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p123",
+      "target": "p126",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p124",
+      "target": "p126",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p125",
+      "target": "p129",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p125",
+      "target": "p130",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p125",
+      "target": "p131",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p128",
+      "target": "p134",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p129",
+      "target": "p130",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p129",
+      "target": "p131",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p138",
+      "target": "p139",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p138",
+      "target": "p140",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p139",
+      "target": "p140",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p143",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p144",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p145",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p146",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p147",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p142",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p143",
+      "target": "p144",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p143",
+      "target": "p145",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p143",
+      "target": "p146",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p143",
+      "target": "p147",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p143",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p144",
+      "target": "p145",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p144",
+      "target": "p146",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p144",
+      "target": "p147",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p144",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p145",
+      "target": "p146",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p145",
+      "target": "p147",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p145",
+      "target": "p149",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p146",
+      "target": "p147",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p146",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p147",
+      "target": "p148",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p148",
+      "target": "p149",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p150",
+      "target": "p156",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p152",
+      "target": "p153",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p152",
+      "target": "p154",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p153",
+      "target": "p154",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p155",
+      "target": "p157",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p156",
+      "target": "p159",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p156",
+      "target": "p160",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p156",
+      "target": "p161",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p157",
+      "target": "p158",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p165",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p167",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p168",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p169",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p170",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p164",
+      "target": "p171",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p165",
+      "target": "p166",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p165",
+      "target": "p167",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p165",
+      "target": "p168",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p165",
+      "target": "p169",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p165",
+      "target": "p171",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p166",
+      "target": "p167",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p166",
+      "target": "p168",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p166",
+      "target": "p169",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p166",
+      "target": "p171",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p166",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p168",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p169",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p170",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p171",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p167",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p168",
+      "target": "p171",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p168",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p168",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p168",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p169",
+      "target": "p170",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p169",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p169",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p169",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p169",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p170",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p170",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p170",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p170",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p171",
+      "target": "p173",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p171",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p171",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p171",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p171",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p172",
+      "target": "p178",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p172",
+      "target": "p179",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p173",
+      "target": "p174",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p173",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p173",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p173",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p173",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p174",
+      "target": "p175",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p174",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p174",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p174",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p175",
+      "target": "p176",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p175",
+      "target": "p177",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p175",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p175",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p176",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p176",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p177",
+      "target": "p180",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p177",
+      "target": "p181",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p177",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p178",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p178",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p179",
+      "target": "p182",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p179",
+      "target": "p183",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p184",
+      "target": "p189",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p185",
+      "target": "p189",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p186",
+      "target": "p189",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p187",
+      "target": "p189",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p187",
+      "target": "p194",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p188",
+      "target": "p189",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p188",
+      "target": "p194",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p188",
+      "target": "p195",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p189",
+      "target": "p194",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p189",
+      "target": "p195",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p189",
+      "target": "p196",
+      "type": "cocitation",
+      "weight": 1
+    },
+    {
+      "source": "p194",
+      "target": "p199",
+      "type": "cocitation",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "totalPapers": 200,
+    "totalCitations": 1101300,
+    "communities": 112,
+    "dataCompleteness": 1.0,
+    "generatedAt": "2025-01-15T00:00:00Z",
+    "source": "Real academic papers dataset"
+  }
+}
