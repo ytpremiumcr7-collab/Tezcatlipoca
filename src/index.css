@@ -1,6 +1,7 @@
 /* =============================================================================
    TEZCATLIPOCA v2 — SISTEMA DE DISEÑO PROFESIONAL
    Paleta: Dark spatial workstation
+   Mobile-first responsive design
    ============================================================================= */
 
 /* ── FONTS ─────────────────────────────────────────────────────────────────── */
@@ -66,7 +67,7 @@
 
   /* Layout */
   --header-height: 48px;
-  --bottom-height: 36px;
+  --bottom-height: 40px;
   --panel-width: 280px;
   --panel-width-right: 320px;
   --gap: 8px;
@@ -416,6 +417,15 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 
+input[type="range"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+  background: var(--text-muted);
+}
+
 /* ── HUD ───────────────────────────────────────────────────────────────────── */
 .hud-value {
   font-family: var(--font-mono);
@@ -580,7 +590,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: var(--radius-sm);
 }
 
-/* ── GRID LAYOUT ───────────────────────────────────────────────────────────── */
+/* ── GRID LAYOUT (Desktop default) ─────────────────────────────────────────── */
 .tezcatlipoca-grid {
   display: grid;
   grid-template-areas:
@@ -612,28 +622,60 @@ input[type="range"]::-webkit-slider-thumb {
   display: none !important;
 }
 
-/* ── RESPONSIVE ────────────────────────────────────────────────────────────── */
-@media (max-width: 1280px) {
-  .tezcatlipoca-grid {
-    grid-template-columns: 240px 1fr 280px;
+/* ── RESPONSIVE: Large Desktop ─────────────────────────────────────────────── */
+@media (max-width: 1440px) {
+  :root {
+    --panel-width: 260px;
+    --panel-width-right: 300px;
   }
+}
+
+/* ── RESPONSIVE: Desktop ───────────────────────────────────────────────────── */
+@media (max-width: 1280px) {
   :root {
     --panel-width: 240px;
     --panel-width-right: 280px;
   }
 }
 
+/* ── RESPONSIVE: Tablet ────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .tezcatlipoca-grid {
-    grid-template-columns: 200px 1fr 240px;
+  :root {
+    --panel-width: 220px;
+    --panel-width-right: 260px;
+    --header-height: 44px;
   }
+
+  .tezcatlipoca-grid {
+    grid-template-columns: var(--panel-width) 1fr var(--panel-width-right);
+  }
+}
+
+/* ── RESPONSIVE: Small Tablet ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
   :root {
     --panel-width: 200px;
     --panel-width-right: 240px;
   }
+
+  .tezcatlipoca-grid {
+    grid-template-columns: var(--panel-width) 1fr var(--panel-width-right);
+  }
+
+  /* Hide HUD on small tablets */
+  .hud-overlay {
+    display: none !important;
+  }
 }
 
+/* ── RESPONSIVE: Mobile (Portrait) ─────────────────────────────────────────── */
 @media (max-width: 768px) {
+  :root {
+    --header-height: 44px;
+    --bottom-height: 36px;
+    --gap: 6px;
+  }
+
   .tezcatlipoca-grid {
     grid-template-columns: 1fr;
     grid-template-rows: var(--header-height) 1fr auto var(--bottom-height);
@@ -642,30 +684,95 @@ input[type="range"]::-webkit-slider-thumb {
       "world"
       "tools"
       "bottom";
+    padding: 4px;
+    gap: 4px;
   }
 
+  /* Panels as overlays on mobile */
   .panel-left, .panel-right {
-    display: none;
+    display: none !important;
   }
 
   .panel-left.open, .panel-right.open {
-    display: flex;
-    position: fixed;
+    display: flex !important;
+    position: fixed !important;
     top: calc(var(--header-height) + var(--gap));
-    bottom: 0;
+    bottom: calc(var(--bottom-height) + var(--gap));
     width: 85vw;
+    max-width: 320px;
     z-index: 100;
+    border-radius: var(--radius-md);
   }
 
-  .panel-left.open { left: 0; }
-  .panel-right.open { right: 0; }
+  .panel-left.open { left: var(--gap); }
+  .panel-right.open { right: var(--gap); }
 
+  /* Mobile toggle buttons */
   .mobile-toggle {
     display: flex !important;
   }
 
+  /* Tool panel adjustments */
+  .slide-up {
+    width: calc(100vw - 16px) !important;
+    left: 8px !important;
+    right: 8px !important;
+    transform: none !important;
+    bottom: calc(var(--bottom-height) + var(--gap) + 4px) !important;
+    max-height: 50vh !important;
+  }
+
+  /* Bottom bar adjustments */
+  .bottom-bar {
+    padding: 0 8px !important;
+    gap: 8px !important;
+  }
+
+  /* Header adjustments */
+  header {
+    padding: 0 8px !important;
+  }
+
+  header .view-mode-switcher {
+    display: none !important;
+  }
+
+  /* HUD hidden on mobile */
   .hud-overlay {
-    display: none;
+    display: none !important;
+  }
+
+  /* Touch-friendly buttons */
+  .tool-btn {
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+}
+
+/* ── RESPONSIVE: Small Mobile ──────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --header-height: 40px;
+    --bottom-height: 32px;
+  }
+
+  .tezcatlipoca-grid {
+    grid-template-rows: var(--header-height) 1fr auto var(--bottom-height);
+  }
+
+  /* Simplify bottom bar */
+  .bottom-bar .coord-group {
+    display: none !important;
+  }
+
+  .bottom-bar .coord-group:first-child {
+    display: flex !important;
+  }
+
+  /* Smaller tool buttons */
+  .tool-btn {
+    padding: 8px 12px;
+    font-size: 11px;
   }
 }
 
@@ -779,6 +886,10 @@ input[type="range"]::-webkit-slider-thumb {
   z-index: 10;
 }
 
+.cesium-viewer {
+  border-radius: var(--radius-md);
+}
+
 /* ── ACCESSIBILITY ─────────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -801,5 +912,41 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .panel, .hud-overlay, .tool-buttons-area, .bottom-bar {
     display: none !important;
+  }
+}
+
+/* ── MOBILE MENU OVERLAY ───────────────────────────────────────────────────── */
+.mobile-menu-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  animation: fadeIn 0.2s ease;
+}
+
+/* ── TOUCH OPTIMIZATIONS ───────────────────────────────────────────────────── */
+@media (hover: none) and (pointer: coarse) {
+  .tool-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .panel {
+    touch-action: pan-y;
+  }
+}
+
+/* ── HIGH CONTRAST MODE ────────────────────────────────────────────────────── */
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: rgba(56, 189, 248, 0.4);
+    --text-secondary: #b0c4de;
+    --text-muted: #8899aa;
   }
 }

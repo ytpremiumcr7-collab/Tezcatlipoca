@@ -1,5 +1,4 @@
-import { useState, useCallback, useEffect } from 'react'
-import * as bim from '@/services/bimEngine'
+import { useState } from 'react'
 
 interface BIMTask {
   id: string
@@ -10,7 +9,7 @@ interface BIMTask {
   cost: number
   currency: string
   wbs: string
-  dependencies: Array<{ taskId: string; relation: 'FS' | 'SS' | 'FF' | 'SF'; lagDays: number }>
+  dependencies: string[]
   resources: string[]
   clash_check_required: boolean
   elements: string[]
@@ -64,7 +63,7 @@ const MOCK_TASKS: BIMTask[] = [
     cost: 280000,
     currency: 'USD',
     wbs: '1.2',
-    dependencies: [{ taskId: 'task-001', relation: 'FS' as const, lagDays: 0 }],
+    dependencies: ['task-001'],
     resources: ['grúa', 'acero'],
     clash_check_required: true,
     elements: ['column-001', 'beam-001'],
@@ -78,7 +77,7 @@ const MOCK_TASKS: BIMTask[] = [
     cost: 120000,
     currency: 'USD',
     wbs: '2.1',
-    dependencies: [{ taskId: 'task-001', relation: 'FS' as const, lagDays: 0 }],
+    dependencies: ['task-001'],
     resources: ['electricista', 'plomero'],
     clash_check_required: true,
     elements: ['pipe-001', 'cable-001'],
@@ -88,7 +87,6 @@ const MOCK_TASKS: BIMTask[] = [
 export default function BIMPanel() {
   const [activeTab, setActiveTab] = useState<'3d' | '4d' | '5d' | 'clash' | 'qto'>('3d')
   const [selectedTask, setSelectedTask] = useState<string | null>(null)
-  const [modelId, setModelId] = useState<string | null>(null)
 
   const tabs = [
     { id: '3d' as const, label: '3D Modelo', icon: '🏗️' },
@@ -115,199 +113,48 @@ export default function BIMPanel() {
 
       {/* Content */}
       <div style={{ flex: 1, overflow: 'auto' }}>
-        {activeTab === '3d' && <Model3DView modelId={modelId} onModelLoaded={setModelId} />}
-        {activeTab === '4d' && <Scheduling4D modelId={modelId} tasks={MOCK_TASKS} selectedTask={selectedTask} onSelectTask={setSelectedTask} />}
-        {activeTab === '5d' && <Costos5D modelId={modelId} tasks={MOCK_TASKS} />}
-        {activeTab === 'clash' && <ClashDetection modelId={modelId} tasks={MOCK_TASKS} />}
-        {activeTab === 'qto' && <QTOView modelId={modelId} />}
+        {activeTab === '3d' && <Model3DView />}
+        {activeTab === '4d' && <Scheduling4D tasks={MOCK_TASKS} selectedTask={selectedTask} onSelectTask={setSelectedTask} />}
+        {activeTab === '5d' && <Costos5D tasks={MOCK_TASKS} />}
+        {activeTab === 'clash' && <ClashDetection tasks={MOCK_TASKS} />}
+        {activeTab === 'qto' && <QTOView />}
       </div>
     </div>
   )
 }
 
-// 3D Model View — Conectado al backend real
-function Model3DView({ modelId, onModelLoaded }: { modelId: string | null; onModelLoaded: (id: string) => void }) {
-  const [importing, setImporting] = useState(false)
-  const [quantification, setQuantification] = useState<bim.BIMQuantification | null>(null)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleImport = useCallback(async (file: File) => {
-    setImporting(true)
-    setError(null)
-    try {
-      const result = await bim.importIFC(file)
-      onModelLoaded(result.modelId)
-      setQuantification(result.quantification)
-    } catch (e: any) {
-      setError(e.message || 'Error al importar IFC')
-    } finally {
-      setImporting(false)
-    }
-  }, [onModelLoaded])
-
-  const handleLoadQuantification = useCallback(async () => {
-    if (!modelId) return
-    try {
-      const result = await bim.getQuantification(modelId)
-      setQuantification(result)
-    } catch (e: any) {
-      setError(e.message || 'Error al cargar cuantificación')
-    }
-  }, [modelId])
-
-  useEffect(() => {
-    if (modelId && !quantification) {
-      handleLoadQuantification()
-    }
-  }, [modelId, quantification, handleLoadQuantification])
-
+// 3D Model View
+function Model3DView() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-      {error && (
-        <div style={{
-          padding: '8px 12px', borderRadius: 6,
-          background: 'rgba(239,68,68,0.1)', border: '1px solid var(--border-danger)',
-          color: 'var(--text-danger)', fontSize: 12,
-        }}>
-          ❌ {error}
-        </div>
-      )}
-
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>
-          🏗️ Modelo BIM 3D {modelId && <span className="badge badge-blue">{modelId.slice(0, 8)}</span>}
-        </h4>
-        <div style={{ display: 'flex', gap: 8 }}>
-          <label className="tool-btn" style={{ cursor: 'pointer', position: 'relative' }}>
-            📁 {importing ? 'Importando...' : 'Cargar IFC'}
-            <input
-              type="file"
-              accept=".ifc"
-              style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }}
-              onChange={(e) => {
-                const file = e.target.files?.[0]
-                if (file) handleImport(file)
-              }}
-              disabled={importing}
-            />
-          </label>
-          {modelId && (
-            <button className="tool-btn" onClick={handleLoadQuantification}>🔄 Recargar</button>
-          )}
-        </div>
+    <div style={{
+      height: 300,
+      background: 'var(--bg-tertiary)',
+      borderRadius: 8,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      gap: 12,
+    }}>
+      <div style={{ fontSize: 48 }}>🏗️</div>
+      <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+        Modelo IFC 3D — Cargar archivo .ifc
       </div>
-
-      {importing && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div className="loading-spinner" style={{ width: 16, height: 16 }} />
-          <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>Parseando IFC y extrayendo geometría...</span>
-        </div>
-      )}
-
-      {/* 3D Canvas placeholder */}
-      <div style={{
-        height: 300,
-        background: 'var(--bg-tertiary)',
-        borderRadius: 8,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        gap: 12,
-      }}>
-        {modelId ? (
-          <>
-            <div style={{ fontSize: 48, opacity: 0.3 }}>🏗️</div>
-            <span style={{ color: 'var(--text-secondary)', fontSize: 12 }}>
-              Modelo cargado: {quantification?.elementos.length || 0} elementos
-            </span>
-          </>
-        ) : (
-          <>
-            <div style={{ fontSize: 48, opacity: 0.3 }}>📁</div>
-            <span style={{ color: 'var(--text-secondary)', fontSize: 12 }}>
-              Importa un archivo IFC para visualizar
-            </span>
-          </>
-        )}
+      <div style={{ display: 'flex', gap: 8 }}>
+        <button className="tool-btn">📁 Cargar IFC</button>
+        <button className="tool-btn">👁️ Por nivel</button>
+        <button className="tool-btn">📋 Por categoría</button>
       </div>
-
-      {/* Element list from real quantification */}
-      {quantification && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-          <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)' }}>
-            Elementos del modelo ({quantification.elementos.length} total)
-          </div>
-          {Object.entries(quantification.resumen_por_tipo).map(([tipo, data]) => (
-            <div
-              key={tipo}
-              style={{
-                padding: '8px 12px',
-                background: 'var(--bg-tertiary)',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <span style={{ fontSize: 11 }}>{tipo}</span>
-              <div style={{ textAlign: 'right' }}>
-                <span style={{ fontSize: 10, color: 'var(--text-secondary)' }}>
-                  {data.count} elementos
-                </span>
-                {data.volumen_total > 0 && (
-                  <span style={{ fontSize: 10, color: 'var(--text-accent)', marginLeft: 8 }}>
-                    {data.volumen_total.toFixed(2)} m³
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   )
 }
 
-// 4D Scheduling — Gantt con CPM real
-function Scheduling4D({ modelId, tasks, selectedTask, onSelectTask }: {
-  modelId: string | null
+// 4D Scheduling — Gantt
+function Scheduling4D({ tasks, selectedTask, onSelectTask }: {
   tasks: BIMTask[]
   selectedTask: string | null
   onSelectTask: (id: string | null) => void
 }) {
-  const [schedule, setSchedule] = useState<bim.ScheduleResult | null>(null)
-  const [calculating, setCalculating] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleCalculate = useCallback(async () => {
-    if (!modelId) {
-      setError('Importa un modelo IFC primero')
-      return
-    }
-    setCalculating(true)
-    setError(null)
-    try {
-      const scheduleTasks: bim.ScheduleTask[] = tasks.map(t => ({
-        id: t.id,
-        name: t.name,
-        durationDays: Math.ceil((new Date(t.end).getTime() - new Date(t.start).getTime()) / 86400000),
-        dependencies: t.dependencies.map(d => ({
-          taskId: d.taskId,
-          relation: d.relation,
-          lagDays: d.lagDays,
-        })),
-      }))
-      const result = await bim.calculateSchedule(modelId, scheduleTasks, new Date().toISOString())
-      setSchedule(result)
-    } catch (e: any) {
-      setError(e.message || 'Error al calcular cronograma')
-    } finally {
-      setCalculating(false)
-    }
-  }, [modelId, tasks])
-
   const projectStart = new Date('2026-01-01').getTime()
   const projectEnd = new Date('2026-12-31').getTime()
   const totalDuration = projectEnd - projectStart
@@ -333,37 +180,10 @@ function Scheduling4D({ modelId, tasks, selectedTask, onSelectTask }: {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>📅 Gantt — Cronograma de Construcción</h4>
         <div style={{ display: 'flex', gap: 8 }}>
-          <button
-            className="tool-btn"
-            style={{ fontSize: 10 }}
-            onClick={handleCalculate}
-            disabled={calculating || !modelId}
-          >
-            {calculating ? <span className="loading-spinner" style={{ width: 12, height: 12 }} /> : '🧮'} Calcular CPM
-          </button>
           <button className="tool-btn" style={{ fontSize: 10 }}>➕ Tarea</button>
+          <button className="tool-btn" style={{ fontSize: 10 }}>🔗 Dependencias</button>
         </div>
       </div>
-
-      {error && (
-        <div style={{
-          padding: '8px 12px', borderRadius: 6,
-          background: 'rgba(239,68,68,0.1)', border: '1px solid var(--border-danger)',
-          color: 'var(--text-danger)', fontSize: 12,
-        }}>
-          ❌ {error}
-        </div>
-      )}
-
-      {schedule && (
-        <div style={{
-          padding: '8px 12px', background: 'var(--bg-tertiary)',
-          borderRadius: 6, fontSize: 11,
-        }}>
-          <div><strong>Duración proyecto:</strong> {schedule.projectDurationDays} días</div>
-          <div><strong>Rutas críticas:</strong> {schedule.criticalPaths.length}</div>
-        </div>
-      )}
 
       {/* Timeline header */}
       <div style={{
@@ -444,7 +264,7 @@ function Scheduling4D({ modelId, tasks, selectedTask, onSelectTask }: {
                   Recursos: {task.resources.join(', ')}
                 </div>
                 <div style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
-                  Dependencias: {task.dependencies.map(d => `${d.taskId} (${d.relation}${d.lagDays > 0 ? '+' + d.lagDays : ''})`).join(', ') || 'Ninguna'}
+                  Dependencias: {task.dependencies.join(', ') || 'Ninguna'}
                 </div>
                 <div style={{ display: 'flex', gap: 8, marginTop: 4 }}>
                   <button className="tool-btn" style={{ fontSize: 10 }}>▶ Simular</button>
@@ -459,49 +279,17 @@ function Scheduling4D({ modelId, tasks, selectedTask, onSelectTask }: {
   )
 }
 
-// 5D Costos — Curva S con backend real
-function Costos5D({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[] }) {
-  const [cost, setCost] = useState<bim.CostResult | null>(null)
-  const [calculating, setCalculating] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
+// 5D Costos — Curva S
+function Costos5D({ tasks }: { tasks: BIMTask[] }) {
   const totalBudget = tasks.reduce((sum, t) => sum + t.cost, 0)
   const totalActual = tasks.reduce((sum, t) => sum + (t.cost * t.progress / 100), 0)
-
-  const handleCalculate = useCallback(async () => {
-    if (!modelId) {
-      setError('Importa un modelo IFC primero')
-      return
-    }
-    setCalculating(true)
-    setError(null)
-    try {
-      const costTasks: bim.CostTask[] = tasks.map(t => ({
-        id: t.id,
-        durationDays: Math.ceil((new Date(t.end).getTime() - new Date(t.start).getTime()) / 86400000),
-        costItems: [
-          { category: 'Labor', type: 'per_day', amount: String(Math.round(t.cost * 0.4)) },
-          { category: 'Materials', type: 'fixed', amount: String(Math.round(t.cost * 0.35)) },
-          { category: 'Equipment', type: 'per_day', amount: String(Math.round(t.cost * 0.15)) },
-          { category: 'Overhead', type: 'fixed', amount: String(Math.round(t.cost * 0.1)) },
-        ],
-        resources: [],
-      }))
-      const result = await bim.calculateCost(modelId, costTasks, [])
-      setCost(result)
-    } catch (e: any) {
-      setError(e.message || 'Error al calcular costos')
-    } finally {
-      setCalculating(false)
-    }
-  }, [modelId, tasks])
 
   // Curva S points
   const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
   const plannedPoints = months.map((_, i) => ({
     month: _,
     planned: (totalBudget / 12) * (i + 1),
-    actual: cost ? parseFloat(cost.byTask[Object.keys(cost.byTask)[0]] || '0') * (i + 1) / 12 : (totalActual / 12) * (i + 1),
+    actual: (totalActual / 12) * (i + 1) * (0.8 + Math.random() * 0.4),
   }))
 
   const maxValue = Math.max(...plannedPoints.map((p) => Math.max(p.planned, p.actual)))
@@ -510,42 +298,11 @@ function Costos5D({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[]
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>💰 5D — Costos y Curva S</h4>
-        <div style={{ display: 'flex', gap: 8 }}>
-          <button
-            className="tool-btn"
-            style={{ fontSize: 10 }}
-            onClick={handleCalculate}
-            disabled={calculating || !modelId}
-          >
-            {calculating ? <span className="loading-spinner" style={{ width: 12, height: 12 }} /> : '🧮'} Calcular 5D
-          </button>
+        <div style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
+          Presupuesto: <span style={{ color: 'var(--text-accent)' }}>${totalBudget.toLocaleString()}</span>
+          {' • '}
+          Ejecutado: <span style={{ color: 'var(--text-success)' }}>${totalActual.toLocaleString()}</span>
         </div>
-      </div>
-
-      {error && (
-        <div style={{
-          padding: '8px 12px', borderRadius: 6,
-          background: 'rgba(239,68,68,0.1)', border: '1px solid var(--border-danger)',
-          color: 'var(--text-danger)', fontSize: 12,
-        }}>
-          ❌ {error}
-        </div>
-      )}
-
-      {cost && (
-        <div style={{
-          padding: '8px 12px', background: 'var(--bg-tertiary)',
-          borderRadius: 6, fontSize: 11,
-        }}>
-          <div><strong>Costo Total:</strong> ${parseFloat(cost.totalCost).toLocaleString()}</div>
-          <div><strong>Categorías:</strong> {Object.keys(cost.byCategory).length}</div>
-        </div>
-      )}
-
-      <div style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
-        Presupuesto: <span style={{ color: 'var(--text-accent)' }}>${totalBudget.toLocaleString()}</span>
-        {' • '}
-        Ejecutado: <span style={{ color: 'var(--text-success)' }}>${totalActual.toLocaleString()}</span>
       </div>
 
       {/* Curva S Chart */}
@@ -557,15 +314,20 @@ function Costos5D({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[]
         position: 'relative',
       }}>
         <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          {/* Grid */}
           {[0, 25, 50, 75, 100].map((y) => (
             <line key={y} x1="0" y1={y} x2="100" y2={y} stroke="var(--border-color)" strokeWidth="0.3" />
           ))}
+          
+          {/* Planned curve */}
           <polyline
             fill="none"
             stroke="var(--accent-blue)"
             strokeWidth="0.8"
             points={plannedPoints.map((p, i) => `${(i / 11) * 100},${100 - (p.planned / maxValue) * 100}`).join(' ')}
           />
+          
+          {/* Actual curve */}
           <polyline
             fill="none"
             stroke="var(--text-success)"
@@ -574,7 +336,15 @@ function Costos5D({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[]
             points={plannedPoints.map((p, i) => `${(i / 11) * 100},${100 - (p.actual / maxValue) * 100}`).join(' ')}
           />
         </svg>
-        <div style={{ position: 'absolute', top: 8, right: 8, display: 'flex', gap: 12, fontSize: 10 }}>
+        
+        {/* Legend */}
+        <div style={{
+          position: 'absolute',
+          top: 8, right: 8,
+          display: 'flex',
+          gap: 12,
+          fontSize: 10,
+        }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             <div style={{ width: 12, height: 2, background: 'var(--accent-blue)' }} />
             <span>Planificado</span>
@@ -618,229 +388,81 @@ function Costos5D({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[]
   )
 }
 
-// Clash Detection — Conectado al backend real
-function ClashDetection({ modelId, tasks }: { modelId: string | null; tasks: BIMTask[] }) {
-  const [clashes, setClashes] = useState<bim.ClashResult[] | null>(null)
-  const [running, setRunning] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+// Clash Detection
+function ClashDetection({ tasks }: { tasks: BIMTask[] }) {
   const clashTasks = tasks.filter((t) => t.clash_check_required)
-
-  const handleRun = useCallback(async () => {
-    if (!modelId) {
-      setError('Importa un modelo IFC primero')
-      return
-    }
-    setRunning(true)
-    setError(null)
-    try {
-      const result = await bim.runClashDetection(modelId, 50)
-      setClashes(result)
-    } catch (e: any) {
-      setError(e.message || 'Error al detectar interferencias')
-    } finally {
-      setRunning(false)
-    }
-  }, [modelId])
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
       <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>💥 Clash Detection</h4>
       
-      {error && (
-        <div style={{
-          padding: '8px 12px', borderRadius: 6,
-          background: 'rgba(239,68,68,0.1)', border: '1px solid var(--border-danger)',
-          color: 'var(--text-danger)', fontSize: 12,
-        }}>
-          ❌ {error}
-        </div>
-      )}
-
       <div style={{ display: 'flex', gap: 8 }}>
-        <button
-          className="tool-btn"
-          onClick={handleRun}
-          disabled={running || !modelId}
-        >
-          {running ? <span className="loading-spinner" style={{ width: 12, height: 12 }} /> : '🔍'} Detectar interferencias
-        </button>
+        <button className="tool-btn">🔍 Detectar interferencias</button>
         <button className="tool-btn">📊 Reporte</button>
         <button className="tool-btn">✅ Resolver</button>
       </div>
 
-      {clashes && clashes.length > 0 && (
-        <div style={{
-          padding: '8px 12px', background: 'var(--bg-tertiary)',
-          borderRadius: 6, fontSize: 11,
-        }}>
-          <div style={{ color: 'var(--text-warning)' }}>
-            ⚠️ {clashes.length} interferencias detectadas
-          </div>
-          <div>
-            Críticas: {clashes.filter(c => c.severity === 'CRITICAL').length} |
-            Warnings: {clashes.filter(c => c.severity === 'WARNING').length} |
-            Info: {clashes.filter(c => c.severity === 'INFO').length}
-          </div>
-        </div>
-      )}
-
-      {clashes && clashes.map((clash) => (
-        <div key={clash.id} style={{
-          padding: '10px 12px',
-          background: 'var(--bg-tertiary)',
-          borderRadius: 6,
-          border: `1px solid ${clash.severity === 'CRITICAL' ? 'var(--border-danger)' : clash.severity === 'WARNING' ? 'var(--border-warning)' : 'var(--border-color)'}`,
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-              <div style={{ fontSize: 11, fontWeight: 600 }}>{clash.element_a} ↔ {clash.element_b}</div>
-              <div style={{ fontSize: 10, color: 'var(--text-secondary)' }}>{clash.descripcion}</div>
-            </div>
-            <span className={`badge badge-${clash.severity === 'CRITICAL' ? 'red' : clash.severity === 'WARNING' ? 'amber' : 'blue'}`}>
-              {clash.severity}
-            </span>
-          </div>
-        </div>
-      ))}
-
-      {!clashes && clashTasks.map((task) => (
-        <div key={task.id} style={{
-          padding: '10px 12px',
-          background: 'var(--bg-tertiary)',
-          borderRadius: 6,
-          border: '1px solid var(--border-color)',
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-              <div style={{ fontSize: 11, fontWeight: 600 }}>{task.name}</div>
-              <div style={{ fontSize: 10, color: 'var(--text-secondary)' }}>
-                {task.elements.length} elementos • Requiere chequeo
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+        {clashTasks.map((task) => (
+          <div key={task.id} style={{
+            padding: '10px 12px',
+            background: 'var(--bg-tertiary)',
+            borderRadius: 6,
+            border: '1px solid var(--border-color)',
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div>
+                <div style={{ fontSize: 11, fontWeight: 600 }}>{task.name}</div>
+                <div style={{ fontSize: 10, color: 'var(--text-secondary)' }}>
+                  {task.elements.length} elementos • Requiere chequeo
+                </div>
+              </div>
+              <div style={{
+                padding: '4px 10px',
+                borderRadius: 10,
+                background: 'rgba(245,158,11,0.1)',
+                color: 'var(--text-warning)',
+                fontSize: 10,
+              }}>
+                ⏳ Pendiente
               </div>
             </div>
-            <div style={{
-              padding: '4px 10px',
-              borderRadius: 10,
-              background: 'rgba(245,158,11,0.1)',
-              color: 'var(--text-warning)',
-              fontSize: 10,
-            }}>
-              ⏳ Pendiente
-            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
 
-// QTO View — Conectado al backend real
-function QTOView({ modelId }: { modelId: string | null }) {
-  const [qto, setQto] = useState<bim.BIMQuantification | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleLoad = useCallback(async () => {
-    if (!modelId) {
-      setError('Importa un modelo IFC primero')
-      return
-    }
-    setLoading(true)
-    setError(null)
-    try {
-      const result = await bim.getQuantification(modelId)
-      setQto(result)
-    } catch (e: any) {
-      setError(e.message || 'Error al cargar QTO')
-    } finally {
-      setLoading(false)
-    }
-  }, [modelId])
-
-  useEffect(() => {
-    if (modelId && !qto) {
-      handleLoad()
-    }
-  }, [modelId, qto, handleLoad])
-
+// QTO View
+function QTOView() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>📊 Quantity Takeoff (QTO)</h4>
-        {modelId && (
-          <button
-            className="tool-btn"
-            onClick={handleLoad}
-            disabled={loading}
-          >
-            {loading ? <span className="loading-spinner" style={{ width: 12, height: 12 }} /> : '🔄'} Recargar
-          </button>
-        )}
+      <h4 style={{ fontSize: 12, color: 'var(--text-accent)' }}>📊 Quantity Takeoff (QTO)</h4>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
+        <MetricCard label="Volumen Total" value="1,245 m³" trend="+12%" />
+        <MetricCard label="Área Total" value="3,420 m²" trend="+5%" />
+        <MetricCard label="Longitud" value="890 m" trend="0%" />
       </div>
 
-      {error && (
-        <div style={{
-          padding: '8px 12px', borderRadius: 6,
-          background: 'rgba(239,68,68,0.1)', border: '1px solid var(--border-danger)',
-          color: 'var(--text-danger)', fontSize: 12,
-        }}>
-          ❌ {error}
-        </div>
-      )}
-
-      {qto ? (
-        <>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
-            <MetricCard
-              label="Volumen Total"
-              value={`${qto.total_volumen.toFixed(2)} m³`}
-              trend="+12%"
-            />
-            <MetricCard
-              label="Área Total"
-              value={`${qto.total_area.toFixed(2)} m²`}
-              trend="+5%"
-            />
-            <MetricCard
-              label="Elementos"
-              value={`${qto.elementos.length}`}
-              trend="0%"
-            />
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+        {['Muros', 'Losas', 'Columnas', 'Vigas', 'Escaleras'].map((element) => (
+          <div key={element} style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '8px 12px',
+            background: 'var(--bg-tertiary)',
+            borderRadius: 6,
+          }}>
+            <span style={{ fontSize: 11 }}>{element}</span>
+            <span style={{ fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--text-accent)' }}>
+              {Math.round(Math.random() * 500)} m³
+            </span>
           </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-            {Object.entries(qto.resumen_por_tipo).map(([tipo, data]) => (
-              <div key={tipo} style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                padding: '8px 12px',
-                background: 'var(--bg-tertiary)',
-                borderRadius: 6,
-              }}>
-                <span style={{ fontSize: 11 }}>{tipo}</span>
-                <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--text-accent)' }}>
-                    {data.count} elem
-                  </span>
-                  {data.volumen_total > 0 && (
-                    <span style={{ fontSize: 10, color: 'var(--text-secondary)', marginLeft: 8 }}>
-                      {data.volumen_total.toFixed(2)} m³
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div style={{
-          padding: 24, textAlign: 'center',
-          background: 'var(--bg-tertiary)', borderRadius: 8,
-          color: 'var(--text-secondary)', fontSize: 12,
-        }}>
-          {modelId ? 'Cargando QTO...' : 'Importa un modelo IFC para ver QTO'}
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   )
 }
